@@ -15,4 +15,4 @@ Scripts to auto install some programs after first boot into a linux distro.
 ### Closed Source ###
 * VS Code
 * Steam
-* Discord
+* Discord (not added yet)
