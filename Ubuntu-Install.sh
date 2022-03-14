@@ -1,4 +1,6 @@
 !/bin/bash
+#update
 sudo apt update
 sudo apt full-upgrade -y
-flatpak uninstall org.libreoffice.LibreOffice//fresh #flatpack
+#install libreoffice flatpack
+flatpak uninstall org.libreoffice.LibreOffice//fresh
