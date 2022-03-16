@@ -19,21 +19,27 @@ echo "####################    Updated    #######################"
 
 
 
-echo "####################    Install Flatpack    #######################"
-sudo apt remove flatpack
-sudo apt install -y flatpakv
-sudo flatpack update
-echo "####################    Flatpack Installed   #######################"
-
-
-
 echo "####################    Adding Repositories   #######################"
 #Install repositories
-sudo add-apt-repository multiverse
+sudo add-apt-repository -y multiverse
 sudo add-apt-repository -y ppa:libreoffice/ppa
 sudo add-apt-repository -y ppa:inkscape.dev/stable
 sudo add-apt-repository -y ppa:obsproject/obs-studio
+sudo add-apt-repository -y ppa:flatpak/stable
 echo "####################    Repositories Added   #######################"
+
+
+
+echo "####################       Remove Current Versions      #######################"
+sudo apt remove ffmpeg
+sudo apt remove obs-studio
+sudo apt remove vlc
+sudo apt remove thunderbird
+sudo apt remove inkscape
+sudo apt remove libreoffice
+sudo apt remove flatpack
+echo "####################    Completed Removal of Software   #######################"
+
 
 
 echo "####################    Installing Software  #######################"
