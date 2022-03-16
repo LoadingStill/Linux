@@ -1,3 +1,4 @@
+#!/bin/bash
 echo "########################  obs installing  #######################"
 sudo apt-get remove obs
 sudo apt-get remove obs-studio
