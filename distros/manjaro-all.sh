@@ -1,3 +1,3 @@
-!/bin/bash
+#!/bin/bash
 #update
 sudo pacman -Syyu
