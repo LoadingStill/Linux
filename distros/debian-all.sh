@@ -20,8 +20,8 @@ echo "####################    Updated    #######################"
 
 
 echo "####################    Installing Software   #######################"
-obs-install.sh
-discord-install.sh
+sh software/apt/install-obs.sh
+sh software/apt/install-discord.sh
 echo "####################    Software Installed    #######################"
 
 
