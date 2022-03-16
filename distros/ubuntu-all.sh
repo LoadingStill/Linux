@@ -21,7 +21,7 @@ echo "####################    Updated    #######################"
 
 echo "####################    Install Flatpack    #######################"
 sudo apt remove flatpack
-sudo apt install flatpakv
+sudo apt install -y flatpakv
 sudo flatpack update
 echo "####################    Flatpack Installed   #######################"
 
@@ -38,15 +38,15 @@ echo "####################    Repositories Added   #######################"
 
 echo "####################    Installing Software  #######################"
 #install OBS
-sudo apt-get install ffmpeg
-sudo apt install v4l2loopback-dkms -y
+sudo apt-get install -y ffmpeg
+sudo apt install -y v4l2loopback-dkms
 sudo apt-get update
-sudo apt-get install obs-studio
-sudo apt-get install vlc
-sudo apt-get install thunderbird
-sudo apt-get install inkscape
-sudo apt-get install libreoffice
-sudo flatpak install https://flathub.org/repo/appstream/org.gimp.GIMP.flatpakref
+sudo apt-get install -y obs-studio
+sudo apt-get install -y vlc
+sudo apt-get install -y thunderbird
+sudo apt-get install -y inkscape
+sudo apt-get install -y libreoffice
+sudo flatpak install -y https://flathub.org/repo/appstream/org.gimp.GIMP.flatpakref
 #if program will not run by clicking shortcut run | flatpak run org.gimp.GIMP//stable
 echo "####################    Software Installed   #######################"
 
@@ -59,7 +59,7 @@ echo "####################    Software Installed   #######################"
 echo "####################    Non-Free Software Installing   #######################"
 #NON-FREE
 #Wget vs code info
-sudo apt-get install wget gpg
+sudo apt-get install -y wget gpg
 wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
 sudo install -o root -g root -m 644 packages.microsoft.gpg /etc/apt/trusted.gpg.d/
 sudo sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/trusted.gpg.d/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'
@@ -69,7 +69,7 @@ sudo apt install apt-transport-https
 sudo apt update
 sudo apt install code # or code-insiders
 #Install Steam
-sudo apt-get install steam
+sudo apt-get install -y steam
 echo "####################   Non-Free Software Installed    #######################"
 
 
