@@ -1,3 +1,4 @@
+#!/bin/bash
 echo "########################  ffmpeg installing  #######################"
 sudo apt-get remove ffmpeg
 sudo apt-get remove ffmpeg-real
