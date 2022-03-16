@@ -30,9 +30,9 @@ echo "####################    Flatpack Installed   #######################"
 echo "####################    Adding Repositories   #######################"
 #Install repositories
 sudo add-apt-repository multiverse
-sudo add-apt-repository ppa:libreoffice/ppa
-sudo add-apt-repository ppa:inkscape.dev/stable
-sudo add-apt-repository ppa:obsproject/obs-studio
+sudo add-apt-repository -y ppa:libreoffice/ppa
+sudo add-apt-repository -y ppa:inkscape.dev/stable
+sudo add-apt-repository -y ppa:obsproject/obs-studio
 echo "####################    Repositories Added   #######################"
 
 
@@ -65,9 +65,9 @@ sudo install -o root -g root -m 644 packages.microsoft.gpg /etc/apt/trusted.gpg.
 sudo sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/trusted.gpg.d/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'
 rm -f packages.microsoft.gpg
 #Install VS-Code
-sudo apt install apt-transport-https
+sudo apt install -y apt-transport-https
 sudo apt update
-sudo apt install code # or code-insiders
+sudo apt install -y code # or code-insiders
 #Install Steam
 sudo apt-get install -y steam
 echo "####################   Non-Free Software Installed    #######################"
@@ -79,12 +79,13 @@ sudo apt-get update
 sudo apt-get upgrade -y
 sudo apt-get dist-upgrade -y
 sudo apt-get autoremove -y
-echo "####################    Completed    #######################"
+echo "####################    Completed Updates    #######################"
 
 
 
 echo "################################################################"
 echo "#                                                              #"
-echo "#                    Completed Debian.sh                       #"
+echo "#                    Completed ubuntu-all.sh                   #"
+echo "#                 Please restart your copmputer!               #"
 echo "#                                                              #"
 echo "################################################################"
