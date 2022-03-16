@@ -52,6 +52,11 @@ echo "####################    Software Installed   #######################"
 
 
 
+#ADD SELECTION TO INSTALL NON FREE SOFTWARE HERE!!!
+
+
+
+echo "####################    Non-Free Software Installing   #######################"
 #NON-FREE
 #Wget vs code info
 sudo apt-get install wget gpg
@@ -65,7 +70,7 @@ sudo apt update
 sudo apt install code # or code-insiders
 #Install Steam
 sudo apt-get install steam
-echo "####################    Software Installed    #######################"
+echo "####################   Non-Free Software Installed    #######################"
 
 
 
