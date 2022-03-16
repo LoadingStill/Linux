@@ -1,36 +1,57 @@
-!/bin/bash
-#update system
-sudo apt update
-sudo apt full-upgrade -y
-#Install multiverse repositort
-sudo add-apt-repository multiverse
-#make sure flatpack is installed
-sudo apt install flatpakv
-flatpack update
-#install libreoffice repository
-sudo add-apt-repository ppa:libreoffice/ppa
+#!/bin/bash
+
+
+
+echo "################################################################"
+echo "#                                                              #"
+echo "#                    Ubuntu Install Scrip                      #"
+echo "#                                                              #"
+echo "################################################################"
+
+
+
+echo "####################    Updating    #######################"
 sudo apt-get update
 sudo apt-get upgrade -y
-sudo apt-get install libreoffice
-#install GIMP flatpack
-#update flatpack
-sudo flatpak update
-sudo flatpak install https://flathub.org/repo/appstream/org.gimp.GIMP.flatpakref
-#if program will not run by clicking shortcut run | flatpak run org.gimp.GIMP//stable
-#install Inkscape
+sudo apt-get dist-upgrade -y
+sudo apt-get autoremove -y
+echo "####################    Updated    #######################"
+
+
+
+echo "####################    Install Flatpack    #######################"
+sudo apt remove flatpack
+sudo apt install flatpakv
+sudo flatpack update
+echo "####################    Flatpack Installed   #######################"
+
+
+
+echo "####################    Adding Repositories   #######################"
+#Install repositories
+sudo add-apt-repository multiverse
+sudo add-apt-repository ppa:libreoffice/ppa
 sudo add-apt-repository ppa:inkscape.dev/stable
-sudo apt-get update
-sudo apt-get install inkscape
-#install Thunderbird
-sudo apt-get install thunderbird
+sudo add-apt-repository ppa:obsproject/obs-studio
+echo "####################    Repositories Added   #######################"
+
+
+echo "####################    Installing Software   #######################"
 #install OBS
 sudo apt-get install ffmpeg
 sudo apt install v4l2loopback-dkms
-sudo add-apt-repository ppa:obsproject/obs-studio
 sudo apt-get update
 sudo apt-get install obs-studio
-#Install VLC
 sudo apt-get install vlc
+sudo apt-get install thunderbird
+sudo apt-get install inkscape
+sudo apt-get install libreoffice
+sudo flatpak install https://flathub.org/repo/appstream/org.gimp.GIMP.flatpakref
+#if program will not run by clicking shortcut run | flatpak run org.gimp.GIMP//stable
+echo "####################    Software Installed   #######################"
+
+
+
 #NON-FREE
 #Wget vs code info
 sudo apt-get install wget gpg
@@ -44,3 +65,21 @@ sudo apt update
 sudo apt install code # or code-insiders
 #Install Steam
 sudo apt-get install steam
+echo "####################    Software Installed    #######################"
+
+
+
+echo "####################    After Software Updates    #######################"
+sudo apt-get update
+sudo apt-get upgrade -y
+sudo apt-get dist-upgrade -y
+sudo apt-get autoremove -y
+echo "####################    Completed    #######################"
+
+
+
+eecho "################################################################"
+echo "#                                                              #"
+echo "#                    Completed Debian.sh                       #"
+echo "#                                                              #"
+echo "################################################################"
