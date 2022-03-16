@@ -36,10 +36,10 @@ sudo add-apt-repository ppa:obsproject/obs-studio
 echo "####################    Repositories Added   #######################"
 
 
-echo "####################    Installing Software   #######################"
+echo "####################    Installing Software  #######################"
 #install OBS
 sudo apt-get install ffmpeg
-sudo apt install v4l2loopback-dkms
+sudo apt install v4l2loopback-dkms -y
 sudo apt-get update
 sudo apt-get install obs-studio
 sudo apt-get install vlc
@@ -83,7 +83,7 @@ echo "####################    Completed    #######################"
 
 
 
-eecho "################################################################"
+echo "################################################################"
 echo "#                                                              #"
 echo "#                    Completed Debian.sh                       #"
 echo "#                                                              #"
