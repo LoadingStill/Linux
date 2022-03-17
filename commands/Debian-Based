@@ -1,0 +1,9 @@
+Update:
+apt update && apt upgrade
+
+Install Package:
+apt install 'PackageName'
+
+Search for packages:
+apt search 'PackageName'
+
