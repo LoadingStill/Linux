@@ -59,6 +59,12 @@ echo "####################    Software Installed   #######################"
 
 
 #ADD SELECTION TO INSTALL NON FREE SOFTWARE HERE!!!
+#Selection
+#install 1,2,3,4...
+#1.vscode
+#2.steam
+#3.discord
+#4.etc
 
 
 
