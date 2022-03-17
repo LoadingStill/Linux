@@ -65,6 +65,7 @@ echo "####################    Software Installed   #######################"
 #2.steam
 #3.discord
 #4.etc
+#5.NONE-EXIT install.sh
 
 
 
