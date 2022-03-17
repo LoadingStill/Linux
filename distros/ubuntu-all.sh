@@ -57,32 +57,40 @@ sudo flatpak install -y https://flathub.org/repo/appstream/org.gimp.GIMP.flatpak
 echo "####################    Software Installed   #######################"
 
 
-
+echo "####################    Non-Free Software Selection   #######################"
 #ADD SELECTION TO INSTALL NON FREE SOFTWARE HERE!!!
-#Selection
-#install 1,2,3,4...
-#1.vscode
-#2.steam
-#3.discord
-#4.etc
-#5.NONE-EXIT install.sh
+
+PS3='Please enter your choice: '
+options=("1 VS-Code" "2 Steam" "Option 3" "Quit")
+select opt in "${options[@]}"
+do
+    case $opt in
+        "1 VS-Code")
+            sudo apt-get install -y wget gpg
+            wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
+            sudo install -o root -g root -m 644 packages.microsoft.gpg /etc/apt/trusted.gpg.d/
+            sudo sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/trusted.gpg.d/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'
+            rm -f packages.microsoft.gpg
+            #Install VS-Code
+            sudo apt install -y apt-transport-https
+            sudo apt update
+            sudo apt install -y code # or code-insiders
+            ;;
+        "2 Steam")
+            sudo apt-get install -y steam
+            ;;
+        "Option 3")
+            echo "you chose choice $REPLY which is $opt"
+            ;;
+        "Quit")
+            break
+            ;;
+        *) echo "invalid option $REPLY";;
+    esac
+done
 
 
 
-echo "####################    Non-Free Software Installing   #######################"
-#NON-FREE
-#Wget vs code info
-sudo apt-get install -y wget gpg
-wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
-sudo install -o root -g root -m 644 packages.microsoft.gpg /etc/apt/trusted.gpg.d/
-sudo sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/trusted.gpg.d/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'
-rm -f packages.microsoft.gpg
-#Install VS-Code
-sudo apt install -y apt-transport-https
-sudo apt update
-sudo apt install -y code # or code-insiders
-#Install Steam
-sudo apt-get install -y steam
 echo "####################   Non-Free Software Installed    #######################"
 
 
