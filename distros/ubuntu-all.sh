@@ -46,7 +46,7 @@ echo "####################    Installing Software  #######################"
 #install OBS
 sh software/apt/install-ffmpeg.sh #installs ffmpeg
 sh software/apt/install-obs-studio.sh #installs OBS Studio
-sudo apt-get install -y vlc
+sh software/apt/install-vlc.sh #installs vlc
 sudo apt-get install -y thunderbird
 sudo apt-get install -y inkscape
 sudo apt-get install -y libreoffice
@@ -65,15 +65,7 @@ select opt in "${options[@]}"
 do
     case $opt in
         "1 VS-Code")
-            sudo apt-get install -y wget gpg
-            wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
-            sudo install -o root -g root -m 644 packages.microsoft.gpg /etc/apt/trusted.gpg.d/
-            sudo sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/trusted.gpg.d/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'
-            rm -f packages.microsoft.gpg
-            #Install VS-Code
-            sudo apt install -y apt-transport-https
-            sudo apt update
-            sudo apt install -y code # or code-insiders
+            sh software/apt/install-vscode.sh
             ;;
         "2 Steam")
             sudo apt-get install -y steam
