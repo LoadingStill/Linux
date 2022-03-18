@@ -42,7 +42,7 @@ echo "####################    Non-Free Software Selection   ####################
 #ADD SELECTION TO INSTALL NON FREE SOFTWARE HERE!!!
 
 PS3='Please enter your choice: '
-options=("1 VS-Code" "2 Steam" "3 Discord" "Quit")
+options=("1 VS-Code" "2 Steam" "3 Discord" "4 Install ALL" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
@@ -53,6 +53,11 @@ do
             sudo apt-get install -y steam
             ;;
         "3 Discord")
+            sh software/apt/install-discord.sh
+            ;;
+        "4 Install ALL")
+            sh software/apt/install-vscode.sh
+            sudo apt-get install -y steam
             sh software/apt/install-discord.sh
             ;;
         "Quit")
