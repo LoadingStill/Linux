@@ -58,7 +58,7 @@ do
             ;;
         "4 Install ALL")
             sh software/apt/install-vscode.sh
-            sudo apt-get install -y steam
+            sh software/apt/install-discord.sh
             sh software/apt/install-discord.sh
             ;;
         "Quit")
