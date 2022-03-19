@@ -8,10 +8,10 @@ echo "#                    Debian Install Scrip                      #"
 echo "#                                                              #"
 echo "################################################################"
 echo "####################    Updating    #######################"
-sudo apt-get update
-sudo apt-get upgrade -y
-sudo apt-get dist-upgrade -y
-sudo apt-get autoremove -y
+sudo apt update
+sudo apt upgrade -y
+sudo apt dist-upgrade -y
+sudo apt autoremove -y
 echo "####################    Updated    #######################"
 
 
@@ -41,14 +41,14 @@ echo "####################    Completed Removal of Software   ##################
 
 echo "####################    Installing Software  #######################"
 #install OBS
-sudo apt-get install -y ffmpeg
+sudo apt install -y ffmpeg
 sudo apt install -y v4l2loopback-dkms
-sudo apt-get update
-sudo apt-get install -y obs-studio
-sudo apt-get install -y vlc
-sudo apt-get install -y thunderbird
-sudo apt-get install -y inkscape
-sudo apt-get install -y libreoffice
+sudo apt update
+sudo apt install -y obs-studio
+sudo apt install -y vlc
+sudo apt install -y thunderbird
+sudo apt install -y inkscape
+sudo apt install -y libreoffice
 sudo flatpak install -y https://flathub.org/repo/appstream/org.gimp.GIMP.flatpakref
 #if program will not run by clicking shortcut run | flatpak run org.gimp.GIMP//stable
 echo "####################    Software Installed   #######################"
@@ -62,7 +62,7 @@ echo "####################    Software Installed   #######################"
 echo "####################    Non-Free Software Installing   #######################"
 #NON-FREE
 #Wget vs code info
-sudo apt-get install -y wget gpg
+sudo apt install -y wget gpg
 wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
 sudo install -o root -g root -m 644 packages.microsoft.gpg /etc/apt/trusted.gpg.d/
 sudo sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/trusted.gpg.d/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'
@@ -72,16 +72,16 @@ sudo apt install -y apt-transport-https
 sudo apt update
 sudo apt install -y code # or code-insiders
 #Install Steam
-sudo apt-get install -y steam
+sudo apt install -y steam
 echo "####################   Non-Free Software Installed    #######################"
 
 
 
 echo "####################    After Software Updates    #######################"
-sudo apt-get update
-sudo apt-get upgrade -y
-sudo apt-get dist-upgrade -y
-sudo apt-get autoremove -y
+sudo apt update
+sudo apt upgrade -y
+sudo apt dist-upgrade -y
+sudo apt autoremove -y
 echo "####################    Completed Updates    #######################"
 
 
