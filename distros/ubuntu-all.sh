@@ -14,7 +14,7 @@ echo "####################    Updating    #######################"
 sudo apt-get update
 sudo apt-get upgrade -y
 sudo apt-get dist-upgrade -y
-sudo apt-get autoremove -y
+sudo apt-get autoremove
 echo "####################    Updated    #######################"
 
 
@@ -34,7 +34,8 @@ sh software/apt/install-vlc.sh #installs vlc
 sh software/apt/install-thunderbird.sh #installs thunderbird
 sh software/apt/install-inkscape.sh #installs inkscape
 sh software/apt/install-wget.sh #installs wget
-sh software/apt/install-git.sh
+sh software/apt/install-git.sh #installs git
+sh software/apt/install-libreoffice.sh #installs libreoffice
 sh software/apt/install-flatpack.sh #installs flatpack
 echo "####################    Software Installed   #######################"
 
@@ -47,21 +48,25 @@ options=("1 VS-Code" "2 Steam" "3 Discord" "4 Install ALL" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
-        "1 VS-Code")
+        "VS-Code")
             sh software/apt/install-vscode.sh
+            break
             ;;
-        "2 Steam")
+        "Steam")
             sudo apt-get install -y steam
+            break
             ;;
-        "3 Discord")
+        "Discord")
             sh software/apt/install-discord.sh
+            break
             ;;
-        "4 Install ALL")
+        "Install ALL")
             sh software/apt/install-vscode.sh
             sh software/apt/install-discord.sh
             sh software/apt/install-discord.sh
+            break
             ;;
-        "Quit")
+        "None")
             break
             ;;
         *) echo "invalid option $REPLY";;
