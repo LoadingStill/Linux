@@ -6,7 +6,7 @@ sudo dnf install obs-studio
 #uncomment line 7 if you use a nvidia gpu! (delete the #)
 #sudo dnf install xorg-x11-drv-nvidia-cuda
 
-#for older nvidia gpus use uncommit like 10 and not line 7
+#for older nvidia gpus use uncommit line 10 and not line 7 (delete the #)
 #sudo dnf install xorg-x11-drv-nvidia-340xx-cuda
 
 echo "########################  obs installed  #######################"
