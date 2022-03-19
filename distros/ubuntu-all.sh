@@ -34,6 +34,7 @@ sh software/apt/install-vlc.sh #installs vlc
 sh software/apt/install-thunderbird.sh #installs thunderbird
 sh software/apt/install-inkscape.sh #installs inkscape
 sh software/apt/install-wget.sh #installs wget
+sh software/apt/install-git.sh
 sh software/apt/install-flatpack.sh #installs flatpack
 echo "####################    Software Installed   #######################"
 
