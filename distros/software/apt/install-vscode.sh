@@ -1,6 +1,5 @@
 #!bin/bash/
 echo "########################  vscode installing  #######################"
-sudo apt-get remove obs-studio
 sudo apt-get install -y wget gpg
 wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
 sudo install -o root -g root -m 644 packages.microsoft.gpg /etc/apt/trusted.gpg.d/
