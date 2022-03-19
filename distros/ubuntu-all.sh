@@ -58,7 +58,7 @@ do
             ;;
         "Install ALL")
             sh software/apt/install-vscode.sh
-            sh software/apt/install-discord.sh
+            sh software/apt/install-steam.sh
             sh software/apt/install-discord.sh
             ;;
         "None")
