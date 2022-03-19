@@ -27,7 +27,6 @@ echo "####################    Repositories Added   #######################"
 
 
 echo "####################    Installing Software  #######################"
-sh software/apt/install-multiverse.sh #installs multiverse
 sh software/apt/install-ffmpeg.sh #installs ffmpeg
 sh software/apt/install-obs-studio.sh #installs OBS Studio
 sh software/apt/install-vlc.sh #installs vlc
