@@ -14,7 +14,7 @@ echo "####################    Updating    #######################"
 sudo apt-get update
 sudo apt-get upgrade -y
 sudo apt-get dist-upgrade -y
-sudo apt-get autoremove
+sudo apt-get autoremove -y
 echo "####################    Updated    #######################"
 
 
@@ -27,7 +27,6 @@ echo "####################    Repositories Added   #######################"
 
 
 echo "####################    Installing Software  #######################"
-sh software/apt/install-multiverse.sh #installs multiverse
 sh software/apt/install-ffmpeg.sh #installs ffmpeg
 sh software/apt/install-obs-studio.sh #installs OBS Studio
 sh software/apt/install-vlc.sh #installs vlc
@@ -50,21 +49,17 @@ do
     case $opt in
         "VS-Code")
             sh software/apt/install-vscode.sh
-            break
             ;;
         "Steam")
             sudo apt-get install -y steam
-            break
             ;;
         "Discord")
             sh software/apt/install-discord.sh
-            break
             ;;
         "Install ALL")
             sh software/apt/install-vscode.sh
             sh software/apt/install-discord.sh
             sh software/apt/install-discord.sh
-            break
             ;;
         "None")
             break
