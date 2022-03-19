@@ -50,21 +50,17 @@ do
     case $opt in
         "VS-Code")
             sh software/apt/install-vscode.sh
-            break
             ;;
         "Steam")
             sudo apt-get install -y steam
-            break
             ;;
         "Discord")
             sh software/apt/install-discord.sh
-            break
             ;;
         "Install ALL")
             sh software/apt/install-vscode.sh
             sh software/apt/install-discord.sh
             sh software/apt/install-discord.sh
-            break
             ;;
         "None")
             break
