@@ -19,6 +19,8 @@ echo "####################    Updated    #######################"
 
 
 echo "####################    Installing Software   #######################"
+sh software/dnf/install-flatpack.sh
+sh software/dnf/install-retroarch.sh
 sh software/dnf/install-obs.sh
 sh software/apt/install-discord.sh
 echo "####################    Software Installed    #######################"
