@@ -1,5 +1,5 @@
 #!/bin/bash
 echo "####################    wget installing    #######################"
-sudo apt-get remove -y wget
-sudo apt-get install -y wget
+sudo apt remove -y wget
+sudo apt install -y wget
 echo "####################    wget  installed    #######################"

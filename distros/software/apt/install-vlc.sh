@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "########################  vlc installing  #######################"
-sudo apt-get remove -y vlc
+sudo apt remove -y vlc
 sudo add-apt-repository -y ppa:videolan/master-daily
-sudo apt-get update
-sudo apt-get install -y vlc
+sudo apt update
+sudo apt install -y vlc
 echo "########################  vlc installed  #######################"
