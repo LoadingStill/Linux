@@ -13,6 +13,7 @@ echo "################################################################"
 echo "####################    Adding Repositories   #######################"
 sh software/apt-flatpack/repositories-multiverse.sh #adds the multiverse repository
 sh software/apt-flatpack/repositories-universe.sh #adds the universe repository
+sh software/apt-flatpack/repositories-flatpack.sh #adds the flatpack repository
 echo "####################    Repositories Added   #######################"
 
 
@@ -37,6 +38,7 @@ sh software/apt-flatpack/install-git.sh #installs git
 sh software/apt-flatpack/install-libreoffice.sh #installs libreoffice
 sh software/apt-flatpack/install-qbittorrent.sh #installs qbittorrent
 sh software/apt-flatpack/install-flatpack.sh #installs flatpack
+sh software/apt-flatpack/install-bitwarden.sh #installs bitwarden
 echo "####################    Software Installed   #######################"
 
 
