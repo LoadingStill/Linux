@@ -1,5 +1,5 @@
 #!bin/bash/
 echo "########################  steam installing  #######################"
-sudo apt remove -y steam
-sudo apt install -y steam
+flatpak install flathub com.valvesoftware.Steam
+flatpak run com.valvesoftware.Steam
 echo "########################  steam  installed  #######################"

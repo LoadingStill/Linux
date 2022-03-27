@@ -1,6 +1,5 @@
 #!/bin/bash
 echo "####################    RetroArch Insatlling   #######################"
-sudo add-apt-repository ppa:libretro/stable
-sudo apt update
-sudo apt install retroarch
+flatpak install flathub org.libretro.RetroArch
+flatpak run org.libretro.RetroArch
 echo "####################    RetroArch  Installed   #######################"

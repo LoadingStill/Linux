@@ -11,8 +11,9 @@ echo "################################################################"
 
 
 echo "####################    Adding Repositories   #######################"
-sh software/apt/repositories-multiverse.sh #adds the multiverse repository
-sh software/apt/repositories-universe.sh #adds the universe repository
+sh software/apt-flatpack/repositories-multiverse.sh #adds the multiverse repository
+sh software/apt-flatpack/repositories-universe.sh #adds the universe repository
+sh software/apt-flatpack/repositories-flatpack.sh #adds the flatpack repository
 echo "####################    Repositories Added   #######################"
 
 
@@ -27,16 +28,17 @@ echo "####################    Updated    #######################"
 
 
 echo "####################    Installing Software  #######################"
-sh software/apt/install-ffmpeg.sh #installs ffmpeg
-sh software/apt/install-obs-studio.sh #installs OBS Studio
-sh software/apt/install-vlc.sh #installs vlc
-sh software/apt/install-thunderbird.sh #installs thunderbird
-sh software/apt/install-inkscape.sh #installs inkscape
-sh software/apt/install-wget.sh #installs wget
-sh software/apt/install-git.sh #installs git
-sh software/apt/install-libreoffice.sh #installs libreoffice
-sh software/apt/install-qbittorrent.sh #installs qbittorrent
-sh software/apt/install-flatpack.sh #installs flatpack
+sh software/apt-flatpack/install-ffmpeg.sh #installs ffmpeg
+sh software/apt-flatpack/install-obs-studio.sh #installs OBS Studio
+sh software/apt-flatpack/install-vlc.sh #installs vlc
+sh software/apt-flatpack/install-thunderbird.sh #installs thunderbird
+sh software/apt-flatpack/install-inkscape.sh #installs inkscape
+sh software/apt-flatpack/install-wget.sh #installs wget
+sh software/apt-flatpack/install-git.sh #installs git
+sh software/apt-flatpack/install-libreoffice.sh #installs libreoffice
+sh software/apt-flatpack/install-qbittorrent.sh #installs qbittorrent
+sh software/apt-flatpack/install-flatpack.sh #installs flatpack
+sh software/apt-flatpack/install-bitwarden.sh #installs bitwarden
 echo "####################    Software Installed   #######################"
 
 
@@ -48,18 +50,18 @@ select opt in "${options[@]}"
 do
     case $opt in
         "VS-Code")
-            sh software/apt/install-vscode.sh #installs vs-code (owned by Microsoft)
+            sh software/apt-flatpack/install-vscode.sh #installs vs-code (owned by Microsoft)
             ;;
         "Steam")
             sudo apt install -y steam #insatlls steam (owned by Valve)
             ;;
         "Discord")
-            sh software/apt/install-discord.sh #installs discord (owned by Discord)
+            sh software/apt-flatpack/install-discord.sh #installs discord (owned by Discord)
             ;;
         "Install ALL")
-            sh software/apt/install-vscode.sh #installs vs-code (owned by Microsoft)
-            sh software/apt/install-steam.sh #insatlls steam (owned by Valve)
-            sh software/apt/install-discord.sh  #installs discord (owned by Discord)
+            sh software/apt-flatpack/install-vscode.sh #installs vs-code (owned by Microsoft)
+            sh software/apt-flatpack/install-steam.sh #insatlls steam (owned by Valve)
+            sh software/apt-flatpack/install-discord.sh  #installs discord (owned by Discord)
             ;;
         "None")
             break

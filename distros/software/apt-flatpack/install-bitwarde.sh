@@ -1,5 +1,5 @@
 #!/bin/bash
 echo "########################  discord installing  #######################"
-flatpak install flathub com.discordapp.Discord
-flatpak run com.discordapp.Discord
+flatpak install flathub com.bitwarden.desktop
+flatpak run com.bitwarden.desktop
 echo "########################  discord  installed  #######################"
