@@ -1,6 +1,5 @@
 #!/bin/bash
 echo "########################  inkscape installing  #######################"
-sudo add-apt-repository -y ppa:inkscape.dev/stable
-sudo apt update
-sudo apt install -y inkscape
+flatpak install flathub org.inkscape.Inkscape
+flatpak run org.inkscape.Inkscape
 echo "########################  inkscape installed  #######################"

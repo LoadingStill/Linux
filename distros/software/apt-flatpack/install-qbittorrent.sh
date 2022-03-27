@@ -1,7 +1,5 @@
 #!/bin/bash
 echo "########################  qbittorrent installing  #######################"
-sudo apt remove -y qbittorrent
-sudo add-apt-repository ppa:qbittorrent-team/qbittorrent-stable
-sudo apt update
-sudo apt install -y qbittorrent
+flatpak install flathub org.qbittorrent.qBittorrent
+flatpak run org.qbittorrent.qBittorrent
 echo "########################  qbittorrent  installed  #######################"

@@ -1,5 +1,5 @@
 #!/bin/bash
 echo "########################  discord installing  #######################"
-wget -O discord.deb "https://discordapp.com/api/download?platform=linux&format=deb"
-sudo dpkg -i /path/to/discord.deb
+flatpak install flathub com.discordapp.Discord
+flatpak run com.discordapp.Discord
 echo "########################  discord  installed  #######################"

@@ -1,6 +1,5 @@
 #!/bin/bash
 echo "########################  git installing  #######################"
-sudo apt remove -y git
-sudo apt update
-sudo apt install -y git
+flatpak install flathub org.gnome.gitg
+flatpak run org.gnome.gitg
 echo "########################  git installed  #######################"

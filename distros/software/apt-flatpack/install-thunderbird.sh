@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "####################    Thunderbird Installing  #######################"
-sudo apt remove -y thunderbird
-sudo apt install -y thunderbird
+flatpak install flathub org.mozilla.Thunderbird
+flatpak run org.mozilla.Thunderbird
 echo "####################    Thunderbird Installed   #######################"
 
