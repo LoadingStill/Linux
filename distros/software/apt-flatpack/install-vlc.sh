@@ -1,5 +1,4 @@
 #!/bin/bash
 echo "########################  vlc installing  #######################"
-flatpak install flathub org.videolan.VLC
-flatpak run org.videolan.VLC
+flatpak install flathub org.videolan.VLC -y
 echo "########################  vlc installed  #######################"

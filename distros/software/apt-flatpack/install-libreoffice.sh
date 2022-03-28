@@ -1,5 +1,4 @@
 #!/bin/bash
 echo "########################  libreoffice installing  #######################"
-flatpak install flathub org.libreoffice.LibreOffice
-flatpak run org.libreoffice.LibreOffice
+flatpak install flathub org.libreoffice.LibreOffice -y
 echo "########################  libreoffice  installed  #######################"

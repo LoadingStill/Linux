@@ -1,5 +1,4 @@
 #!bin/bash/
 echo "########################  steam installing  #######################"
-flatpak install flathub com.valvesoftware.Steam
-flatpak run com.valvesoftware.Steam
+flatpak install flathub com.valvesoftware.Steam -y
 echo "########################  steam  installed  #######################"
