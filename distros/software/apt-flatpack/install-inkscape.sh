@@ -1,5 +1,4 @@
 #!/bin/bash
 echo "########################  inkscape installing  #######################"
-flatpak install flathub org.inkscape.Inkscape
-flatpak run org.inkscape.Inkscape
+flatpak install flathub org.inkscape.Inkscape -y
 echo "########################  inkscape installed  #######################"

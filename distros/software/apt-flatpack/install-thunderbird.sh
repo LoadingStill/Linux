@@ -1,6 +1,5 @@
 #!/bin/bash
 echo "####################    Thunderbird Installing  #######################"
-flatpak install flathub org.mozilla.Thunderbird
-flatpak run org.mozilla.Thunderbird
+flatpak install flathub org.mozilla.Thunderbird -y
 echo "####################    Thunderbird Installed   #######################"
 
