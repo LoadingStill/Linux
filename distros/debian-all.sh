@@ -39,19 +39,31 @@ echo "####################    Software Installed   #######################"
 
 
 echo "####################    Non-Free Software Installing   #######################"
-#NON-FREE
-#Wget vs code info
-sudo apt install -y wget gpg
-wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
-sudo install -o root -g root -m 644 packages.microsoft.gpg /etc/apt/trusted.gpg.d/
-sudo sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/trusted.gpg.d/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'
-rm -f packages.microsoft.gpg
-#Install VS-Code
-sudo apt install -y apt-transport-https
-sudo apt update
-sudo apt install -y code # or code-insiders
-#Install Steam
-sudo apt install -y steam
+PS3='Please enter your choice: '
+options=("1 VS-Code" "2 Steam" "3 Discord" "4 Install ALL" "Quit")
+select opt in "${options[@]}"
+do
+    case $opt in
+        "VS-Code")
+            sh software/apt/install-vscode.sh #installs vs-code (owned by Microsoft)
+            ;;
+        "Steam")
+            sudo apt install -y steam #insatlls steam (owned by Valve)
+            ;;
+        "Discord")
+            sh software/apt/install-discord.sh #installs discord (owned by Discord)
+            ;;
+        "Install ALL")
+            sh software/apt/install-vscode.sh #installs vs-code (owned by Microsoft)
+            sh software/apt/install-steam.sh #insatlls steam (owned by Valve)
+            sh software/apt/install-discord.sh  #installs discord (owned by Discord)
+            ;;
+        "None")
+            break
+            ;;
+        *) echo "invalid option $REPLY";;
+    esac
+done
 echo "####################   Non-Free Software Installed    #######################"
 
 
