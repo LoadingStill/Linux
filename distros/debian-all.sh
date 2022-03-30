@@ -7,6 +7,9 @@ echo "#                                                              #"
 echo "#                    Debian Install Scrip                      #"
 echo "#                                                              #"
 echo "################################################################"
+
+
+
 echo "####################    Updating    #######################"
 sudo apt update
 sudo apt upgrade -y
@@ -16,41 +19,17 @@ echo "####################    Updated    #######################"
 
 
 
-echo "####################    Adding Repositories   #######################"
-#Install repositories
-sudo add-apt-repository -y multiverse
-sudo add-apt-repository -y ppa:libreoffice/ppa
-sudo add-apt-repository -y ppa:inkscape.dev/stable
-sudo add-apt-repository -y ppa:obsproject/obs-studio
-sudo add-apt-repository -y ppa:flatpak/stable
-echo "####################    Repositories Added   #######################"
-
-
-
-echo "####################       Remove Current Versions      #######################"
-sudo apt remove ffmpeg
-sudo apt remove obs-studio
-sudo apt remove vlc
-sudo apt remove thunderbird
-sudo apt remove inkscape
-sudo apt remove libreoffice
-sudo apt remove flatpack
-echo "####################    Completed Removal of Software   #######################"
-
-
-
 echo "####################    Installing Software  #######################"
-#install OBS
-sudo apt install -y ffmpeg
-sudo apt install -y v4l2loopback-dkms
-sudo apt update
-sudo apt install -y obs-studio
-sudo apt install -y vlc
-sudo apt install -y thunderbird
-sudo apt install -y inkscape
-sudo apt install -y libreoffice
-sudo flatpak install -y https://flathub.org/repo/appstream/org.gimp.GIMP.flatpakref
-#if program will not run by clicking shortcut run | flatpak run org.gimp.GIMP//stable
+sh software/apt/install-ffmpeg.sh #installs ffmpeg
+sh software/apt/install-obs-studio.sh #installs OBS Studio
+sh software/apt/install-vlc.sh #installs vlc
+sh software/apt/install-thunderbird.sh #installs thunderbird
+sh software/apt/install-inkscape.sh #installs inkscape
+sh software/apt/install-wget.sh #installs wget
+sh software/apt/install-git.sh #installs git
+sh software/apt/install-libreoffice.sh #installs libreoffice
+sh software/apt/install-qbittorrent.sh #installs qbittorrent
+sh software/apt/install-flatpack.sh #installs flatpack
 echo "####################    Software Installed   #######################"
 
 
