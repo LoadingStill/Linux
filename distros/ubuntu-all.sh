@@ -11,8 +11,8 @@ echo "################################################################"
 
 
 echo "####################    Adding Repositories   #######################"
-sh software/apt/repositories-multiverse.sh #adds the multiverse repository
-sh software/apt/repositories-universe.sh #adds the universe repository
+sh software/apt/install-repositories-multiverse.sh #adds the multiverse repository
+sh software/apt/install-repositories-universe.sh #adds the universe repository
 echo "####################    Repositories Added   #######################"
 
 
