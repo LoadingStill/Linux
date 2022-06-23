@@ -11,9 +11,9 @@ echo "################################################################"
 
 
 echo "####################    Adding Repositories   #######################"
-sh software/apt-flatpack/install-repositories-multiverse.sh #adds the multiverse repository
-sh software/apt-flatpack/install-repositories-universe.sh #adds the universe repository
-sh software/apt-flatpack/install-repositories-flatpack.sh #adds the flatpack repository
+sh software/apt-flatpack/repositories-multiverse.sh #adds the multiverse repository
+sh software/apt-flatpack/repositories-universe.sh #adds the universe repository
+sh software/apt-flatpack/repositories-flatpack.sh #adds the flatpack repository
 echo "####################    Repositories Added   #######################"
 
 
