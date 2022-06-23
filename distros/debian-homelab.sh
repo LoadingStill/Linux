@@ -20,6 +20,7 @@ echo "####################    Installing Software  #######################"
 sh software/apt/install-homelab-jellyfin.sh #installs jellyfin
 sh software/apt/install-homelab-servarr-sonarr.sh #installs sonarr
 sh software/apt/install-homelab-servarr-radarr.sh #installs radarr
+sh software/apt/install-homelab-servarr-readarr.sh #installs readarr
 echo "####################    Software Installed   #######################"
 
 
