@@ -18,6 +18,7 @@ echo "####################    Updated    #######################"
 
 echo "####################    Installing Software  #######################"
 sh software/apt/install-jellyfin.sh #installs jellyfin
+sh software/apt/install-sonarr.sh #installs sonarr
 echo "####################    Software Installed   #######################"
 
 
