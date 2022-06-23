@@ -20,16 +20,16 @@ echo "####################    Updated    #######################"
 
 
 echo "####################    Installing Software  #######################"
-sh software/apt/install-ffmpeg.sh #installs ffmpeg
-sh software/apt/install-obs-studio.sh #installs OBS Studio
-sh software/apt/install-vlc.sh #installs vlc
-sh software/apt/install-thunderbird.sh #installs thunderbird
-sh software/apt/install-inkscape.sh #installs inkscape
-sh software/apt/install-wget.sh #installs wget
-sh software/apt/install-git.sh #installs git
-sh software/apt/install-libreoffice.sh #installs libreoffice
-sh software/apt/install-qbittorrent.sh #installs qbittorrent
-sh software/apt/install-flatpack.sh #installs flatpack
+sh software/apt/install-desktop-ffmpeg.sh #installs ffmpeg
+sh software/apt/install-desktop-obs-studio.sh #installs OBS Studio
+sh software/apt/install-desktop-vlc.sh #installs vlc
+sh software/apt/install-desktop-thunderbird.sh #installs thunderbird
+sh software/apt/install-desktop-inkscape.sh #installs inkscape
+sh software/apt/install-desktop-wget.sh #installs wget
+sh software/apt/install-desktop-git.sh #installs git
+sh software/apt/install-desktop-libreoffice.sh #installs libreoffice
+sh software/apt/install-desktop-qbittorrent.sh #installs qbittorrent
+sh software/apt/install-desktop-flatpack.sh #installs flatpack
 echo "####################    Software Installed   #######################"
 
 
@@ -45,18 +45,18 @@ select opt in "${options[@]}"
 do
     case $opt in
         "VS-Code")
-            sh software/apt/install-vscode.sh #installs vs-code (owned by Microsoft)
+            sh software/apt/install-desktop-vscode.sh #installs vs-code (owned by Microsoft)
             ;;
         "Steam")
             sudo apt install -y steam #insatlls steam (owned by Valve)
             ;;
         "Discord")
-            sh software/apt/install-discord.sh #installs discord (owned by Discord)
+            sh software/apt/install-desktop-discord.sh #installs discord (owned by Discord)
             ;;
         "Install ALL")
-            sh software/apt/install-vscode.sh #installs vs-code (owned by Microsoft)
-            sh software/apt/install-steam.sh #insatlls steam (owned by Valve)
-            sh software/apt/install-discord.sh  #installs discord (owned by Discord)
+            sh software/apt/install-desktop-vscode.sh #installs vs-code (owned by Microsoft)
+            sh software/apt/install-desktop-steam.sh #insatlls steam (owned by Valve)
+            sh software/apt/install-desktop-discord.sh  #installs discord (owned by Discord)
             ;;
         "None")
             break
