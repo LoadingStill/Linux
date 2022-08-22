@@ -1,0 +1,5 @@
+Kernal Configs:
+
+
+RX 6*00 series since kernel 5.9.12 with CONFIG_DRM_AMD_DC_DCN3_0=Y
+https://wiki.gentoo.org/wiki/AMDGPU
