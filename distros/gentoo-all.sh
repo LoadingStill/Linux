@@ -13,12 +13,10 @@ echo "################################################################"
 #Important
 #It is important to read and follow any and all news items that may be listed after performing a repository sync.
 
-
-#To update all installed packages to the latest available versions, first update the Gentoo repository with emaint:
-sudo emaint --auto sync
-
-#Run emerge to update the whole system, with dependencies:
-emerge --ask --verbose --update --deep --newuse @world
+echo "####################    Updating    #######################"
+sudo emaint --auto sync #To update all installed packages to the latest available versions, first update the Gentoo repository with emaint
+emerge --ask --verbose --update --deep --newuse @world #Run emerge to update the whole system, with dependencies
+echo "####################    Updated     #######################"
 
 
 #Important
