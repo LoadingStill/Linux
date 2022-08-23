@@ -18,6 +18,10 @@ sudo emaint --auto sync #To update all installed packages to the latest availabl
 emerge --ask --verbose --update --deep --newuse @world #Run emerge to update the whole system, with dependencies
 echo "####################    Updated     #######################"
 
+echo "####################    Installing Software  #######################"
+sh software/apt/install-desktop-ffmpeg.sh #installs ffmpeg
+
+
 
 #Important
 #Pay attention to any information provided by Portage at the end of the update. Some of this information may be available in the Portage log.
