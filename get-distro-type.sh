@@ -1,5 +1,9 @@
 #!/bin/bash
 
+
+uname -rviom
+
+
 get_distribution_type()
 {
     local dtype
