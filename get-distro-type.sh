@@ -10,7 +10,8 @@ echo "$distro"
 
 #Step 2:
 #Remove all expect the name of the distro ex: keep ubuntu remove lts and version number
-
+remove="PRETTY_NAME=""
+echo "${distro//$remove/}"
 
 #Step 4:
 #take remaining words from step 2 and search the /distros/scripts for any script with the name of the distro in it.
