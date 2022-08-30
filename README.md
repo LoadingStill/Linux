@@ -1,18 +1,10 @@
-# LinuxScripts #
-Scripts to auto install some programs after first boot into a linux distro.
+=====Linux=====
 
-## Software ##
+The reason for this repository is to help auto set up some Linux distrobutions in one go, so you do not need to monitory your new set up and just let the software you want to install.
 
-### Open-Soure ###
-* LibreOffice
-* GIMP
-* Inkscape
-* Thunderbird
-* OBS
-* VLC
-* Firefox
 
-### Closed Source ###
-* VS Code
-* Steam
-* Discord (not added yet)
+
+
+
+
+
