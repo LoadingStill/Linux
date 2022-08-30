@@ -1,3 +1,7 @@
+next step is to remove numbers from os-release
+
+
+
 #!/bin/bash
         #uname -v
 
