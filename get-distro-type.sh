@@ -1,20 +1,20 @@
 #!/bin/bash
-#uname -v
+        #uname -v
 
 #step 1:
 #Get distro type
 
 #distro variable is used to tell what distro you are using
-distro=`sed -n 5p /etc/os-release`
-echo "$distro"
+        distro=`sed -n 5p /etc/os-release`
+        echo "$distro"
 
 #Step 2:
 #Remove all expect the name of the distro ex: keep ubuntu remove lts and version number
-remove="PRETTY_NAME=""
-echo "${distro//$remove/ } " | tr -d '"'
+        remove="PRETTY_NAME=""
+        echo "${distro//$remove/ } " | tr -d '"'
 
 #removes qoutes
-| tr -d "'"
+#| tr -d "'"
 
 #Step 4:
 #take remaining words from step 2 and search the /distros/scripts for any script with the name of the distro in it.
@@ -24,7 +24,7 @@ echo "${distro//$remove/ } " | tr -d '"'
 #tell the user what distro they are using and ask
 
 #shortned variable is the output of step 4 removing fluf from print out of step one.
-echo "$shortned"
+        echo "$shortned"
 
 
 #Step 6:
@@ -33,7 +33,7 @@ echo "$shortned"
 
 
 
-#uname -v (back up)
+        #uname -v (back up)
 
 
 
