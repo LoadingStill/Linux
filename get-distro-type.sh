@@ -11,7 +11,7 @@ echo "$distro"
 #Step 2:
 #Remove all expect the name of the distro ex: keep ubuntu remove lts and version number
 remove="PRETTY_NAME=""
-echo "${distro//$remove/}"
+echo "${distro//$remove/ } " | tr -d '"'
 
 #removes qoutes
 | tr -d "'"
@@ -34,3 +34,7 @@ echo "$shortned"
 
 
 #uname -v (back up)
+
+
+
+#https://linuxhint.com/remove_characters_string_bash/
