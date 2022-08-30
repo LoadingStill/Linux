@@ -1,4 +1,2 @@
 #!/bin/bash
-
-
 uname -v
