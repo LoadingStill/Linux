@@ -23,6 +23,9 @@ echo "$distro"
 echo "$shortned"
 
 
+#Step 6:
+#offer to run a set up script from the scripts that match the $shortned variable in the name of the script
+
 
 
 
