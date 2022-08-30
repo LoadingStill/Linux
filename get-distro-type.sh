@@ -14,7 +14,7 @@
         echo "${distro//$remove/ } " | tr -d '"'
 
 #removes qoutes
-#| tr -d "'"
+#| tr -d  '"'      "
 
 #Step 4:
 #take remaining words from step 2 and search the /distros/scripts for any script with the name of the distro in it.
