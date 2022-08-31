@@ -6,16 +6,21 @@ The reason for this repository is to help auto set up some Linux distrobutions i
 
 
 ## Where to Start?
-If you are new to Linux I would recomend starting with Linux Mint Cinnamon Edition, this Linux distrobution is a good place to start when switching from Windows to Linux.  Linux Mint desktop enviroment is simular enough to Windows that you will not feel overwhemed to fast and be able to explore your new system with some comfort.
+If you are new to Linux, I would recommend starting with Linux Mint Cinnamon Edition, this Linux distribution is a good place to start when switching from Windows to Linux.
 
-  Linux Mint Homepage: https://linuxmint.com/
-  
-  Download Page Link: https://linuxmint.com/edition.php?id=299
-  
-  Linux Mint Installation Guide Link: https://linuxmint-installation-guide.readthedocs.io/en/latest/
+### Recommended Linux Distro For People New To Linux
+  Linux Mint desktop environment is similar enough to Windows that you will not feel overwhelmed too fast and be able to explore your new system with some comfort.
 
+  Linux Mint Homepage: https://linuxmint.com/
+  
+  Download Page Link: https://linuxmint.com/edition.php?id=299
+  
+  Linux Mint Installation Guide Link: https://linuxmint-installation-guide.readthedocs.io/en/latest/
 
+### How To Use This Auto-Installing Scripts
+  When you have installed the Linux Distro of choice you will then need to navigate to 
 
 
 ### Goals
-Be able to run get-distro-type.sh and have the version of Linux you are running and offer to install software for your system automatically, completly hands off.  So when you retrun to your desktop you have a completly set up desktop ready to go.
+Be able to run get-distro-type.sh and have the version of Linux you are running and offer to install software for your system automatically, completely hands off.  So when you return to your desktop you have a completely set up desktop ready to go.
+ May 2007.
