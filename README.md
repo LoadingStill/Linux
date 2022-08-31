@@ -8,7 +8,7 @@ If you are new to Linux, please read this whole page before doing anything.  I w
 
 #### Recommended Linux Distro For People New To Linux
 Linux Mint desktop environment is similar enough to Windows that you will not feel overwhelmed too fast and be able to explore your new system with some comfort.
-(You can press your mouse wheel on a link to open the link in new tab)
+(you can press your mouse wheel on a link to open the link in new tab)
 * Linux Mint Homepage: https://linuxmint.com/
 * Download Page Link: https://linuxmint.com/edition.php?id=299
 * Linux Mint Installation Guide Link: https://linuxmint-installation-guide.readthedocs.io/en/latest/
