@@ -28,10 +28,10 @@ Linux Mint desktop environment is similar enough to Windows that you will not fe
     4. example of the command:
         1. chmod +x get-distro-type.sh
             1. changes permission of the single file get-distro-type.sh to add executable permissions
-    2. sudo chmod +x /distros/debian-all.sh
-      * adds execution permissions to the single file debian-all.sh in the file /distros
+        2. sudo chmod +x /distros/debian-all.sh
+            2. adds execution permissions to the single file debian-all.sh in the file /distros
 5. you can check the permissions by running ls -l
-  * if you see an x in the string next to the file name you were adding exeute premissiosn to then you have done this correctly
+    5. if you see an x in the string next to the file name you were adding exeute premissiosn to then you have done this correctly
 
 ## Goals
 Be able to run get-distro-type.sh and have the version of Linux you are running and offer to install software for your system automatically, completely hands off.  So when you return to your desktop you have a completely set up desktop ready to go.
