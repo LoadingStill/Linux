@@ -4,7 +4,7 @@ next step is to remove numbers from os-release
 
 #!/bin/bash
         #uname -v
-        egrep '^(VERSION|NAME)=' /etc/os-release
+        egrep '^(ID_LIKE|VERSION|NAME)=' /etc/os-release
 
 #step 1:
 #Get distro type
