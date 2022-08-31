@@ -8,3 +8,5 @@ The reason for this repository is to help auto set up some Linux distrobutions i
 
 
 
+### Goals
+Be able to run get-distro-type.sh and have the version of linux you are running and offer to install software for your system automatically, completly hands off.  So when you retrun to your desktop you have a completly set up desktop ready to go.
