@@ -30,6 +30,7 @@ sh software/apt/install-desktop-git.sh #installs git
 sh software/apt/install-desktop-libreoffice.sh #installs libreoffice
 sh software/apt/install-desktop-qbittorrent.sh #installs qbittorrent
 sh software/apt/install-desktop-flatpack.sh #installs flatpack
+sh software/apt/install-desktop-firefox.sh #installs firefox
 echo "####################    Software Installed   #######################"
 
 
