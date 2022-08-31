@@ -1,6 +1,7 @@
 #!/bin/bash
 echo "########################  firefox installing  #######################"
-sudo apt update
 sudo snap remove firefox -y
-sudo apt install firefox -y
+sudo add-apt-repository ppa:mozillateam/firefox-next 
+sudo apt-get update
+sudo apt-get install firefox
 echo "########################  firefox  installed  #######################"
