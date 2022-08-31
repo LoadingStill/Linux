@@ -72,12 +72,12 @@ echo "####################   Non-Free Software Installed    ####################
 
 
 
-echo "####################    After Software Updates    #######################"
+echo "####################    After Software Installed Updates    #######################"
 sudo apt update
 sudo apt upgrade -y
 sudo apt dist-upgrade -y
 sudo apt autoremove -y
-echo "####################  Completed Software Install  #######################"
+echo "####################  Completed Software Install Updates Completed  #######################"
 
 
 
