@@ -18,10 +18,11 @@ Linux Mint desktop environment is similar enough to Windows that you will not fe
 #### How To Use This Auto-Installing Scripts
 1. When you have installed the Linux Distro of choice you will then need to navigate to https://github.com/LoadingStill/Linux
 2. Click the Green Button near the top right of the repository section and select "Download Zip"
-3. Now that the bash scripts are downloaded we need to make sure the software is allowed to be executed (be able to run).  This is done by running a simple command in the terminal.
-    1. Open the folder we just downloaded form step 2.
+3. When the file is done downloading you need to do to your downloads folder and right click on the file you just downloaded.  Click unzip and hit enter
+4. Now that the bash scripts are downloaded we need to make sure the software is allowed to be executed (be able to run).  This is done by running a simple command in the terminal.
+    1. Open the folder we just unzipped form step 3.
     2. And righ click inside the folder and click open in terminal.
-4. Run the command "chmod +x <name>"
+5. Run the command "chmod +x <name>"
     1. chmod - meand Change Mode
     2. +x means to add executable permissions to the file
     3. chmod may require sudo permissions to run
@@ -30,7 +31,7 @@ Linux Mint desktop environment is similar enough to Windows that you will not fe
             1. changes permission of the single file get-distro-type.sh to add executable permissions
         2. sudo chmod +x /distros/debian-all.sh
             2. adds execution permissions to the single file debian-all.sh in the file /distros
-5. you can check the permissions by running ls -l
+6. you can check the permissions by running ls -l
     5. if you see an x in the string next to the file name you were adding exeute premissiosn to then you have done this correctly
 
 ## Goals
