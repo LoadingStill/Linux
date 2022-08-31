@@ -11,11 +11,11 @@ If you are new to Linux, I would recommend starting with Linux Mint Cinnamon Edi
 ### Recommended Linux Distro For People New To Linux
   Linux Mint desktop environment is similar enough to Windows that you will not feel overwhelmed too fast and be able to explore your new system with some comfort.
 
-  Linux Mint Homepage: https://linuxmint.com/
+* Linux Mint Homepage: https://linuxmint.com/
   
-  Download Page Link: https://linuxmint.com/edition.php?id=299
+* Download Page Link: https://linuxmint.com/edition.php?id=299
   
-  Linux Mint Installation Guide Link: https://linuxmint-installation-guide.readthedocs.io/en/latest/
+* Linux Mint Installation Guide Link: https://linuxmint-installation-guide.readthedocs.io/en/latest/
 
 ### How To Use This Auto-Installing Scripts
   When you have installed the Linux Distro of choice you will then need to navigate to 
