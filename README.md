@@ -19,8 +19,8 @@ Linux Mint desktop environment is similar enough to Windows that you will not fe
 1. When you have installed the Linux Distro of choice you will then need to navigate to https://github.com/LoadingStill/Linux
 2. Click the Green Button near the top right of the repository section and select "Download Zip"
 3. Now that the bash scripts are downloaded we need to make sure the software is allowed to be executed (be able to run).  This is done by running a simple command in the terminal.
-    * Open the folder we just downloaded form step 2.
-    * And righ click inside the folder and click open in terminal.
+    1. Open the folder we just downloaded form step 2.
+    2. And righ click inside the folder and click open in terminal.
 4. Run the command "chmod +x <name>"
   * chmod - meand Change Mode
   * +x means to add executable permissions to the file
