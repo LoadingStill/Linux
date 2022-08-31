@@ -28,9 +28,9 @@ Linux Mint desktop environment is similar enough to Windows that you will not fe
     3. chmod may require sudo permissions to run
     4. example of the command:
         1. chmod +x get-distro-type.sh
-            1. changes permission of the single file get-distro-type.sh to add executable permissions
-        2. sudo chmod +x /distros/debian-all.sh 
-            1. adds execution permissions to the single file debian-all.sh in the file /distros
+            1. changes permission of the single file "get-distro-type.sh" to add executable permissions
+        2. sudo chmod +x /distros/debian-all.sh
+            1. adds execution permissions to the single file "debian-all.sh" in the file /distros
 6. you can check the permissions by running ls -l
     5. if you see an x in the string next to the file name you were adding exeute premissiosn to then you have done this correctly
 
