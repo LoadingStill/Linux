@@ -6,7 +6,7 @@ The reason for this repository is to help auto set up some Linux distrobutions i
 ## Where to Start?
 If you are new to Linux, please read this whole page before doing anything.  I would recommend starting with Linux Mint Cinnamon Edition, this Linux distribution is a good place to start when switching from Windows to Linux.
 
-### Recommended Linux Distro For People New To Linux
+#### Recommended Linux Distro For People New To Linux
 Linux Mint desktop environment is similar enough to Windows that you will not feel overwhelmed too fast and be able to explore your new system with some comfort.
 
 * Linux Mint Homepage: https://linuxmint.com/
@@ -15,7 +15,7 @@ Linux Mint desktop environment is similar enough to Windows that you will not fe
   
 * Linux Mint Installation Guide Link: https://linuxmint-installation-guide.readthedocs.io/en/latest/
 
-### How To Use This Auto-Installing Scripts
+#### How To Use This Auto-Installing Scripts
 1. When you have installed the Linux Distro of choice you will then need to navigate to https://github.com/LoadingStill/Linux
 2. Click the Green Button near the top right of the repository section and select "Download Zip"
 
