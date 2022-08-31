@@ -14,6 +14,7 @@ Linux Mint desktop environment is similar enough to Windows that you will not fe
 * Linux Mint Installation Guide Link: https://linuxmint-installation-guide.readthedocs.io/en/latest/
 
 #### How To Use This Auto-Installing Scripts
+### The get-distro-type.sh script is not ready yet. DO NOT RUN YET.  But in the distro folder you can choose the installation script per distro and run from there.
 1. When you have installed the Linux Distro of choice, you will then need to navigate to https://github.com/LoadingStill/Linux
 2. Click the Green Button near the top right of the repository section and select "Download Zip"
 3. When the file is done downloading, you need to do to your downloads folder and right-click on the file you just downloaded.  Click unzip and hit enter
