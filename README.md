@@ -22,12 +22,12 @@ Linux Mint desktop environment is similar enough to Windows that you will not fe
     1. Open the folder we just downloaded form step 2.
     2. And righ click inside the folder and click open in terminal.
 4. Run the command "chmod +x <name>"
-  * chmod - meand Change Mode
-  * +x means to add executable permissions to the file
-  * chmod may require sudo permissions to run
-  * example of the command:
-    1. chmod +x get-distro-type.sh
-      * changes permission of the single file get-distro-type.sh to add executable permissions
+    1. chmod - meand Change Mode
+    2. +x means to add executable permissions to the file
+    3. chmod may require sudo permissions to run
+    4. example of the command:
+        1. chmod +x get-distro-type.sh
+            1. changes permission of the single file get-distro-type.sh to add executable permissions
     2. sudo chmod +x /distros/debian-all.sh
       * adds execution permissions to the single file debian-all.sh in the file /distros
 5. you can check the permissions by running ls -l
