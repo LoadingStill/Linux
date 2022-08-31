@@ -32,7 +32,7 @@ Linux Mint desktop environment is similar enough to Windows that you will not fe
         2. sudo chmod +x /distros/debian-all.sh
             1. Adds execution permissions to the single file "debian-all.sh" in the file /distros
 6. you can check the permissions by running ls -l
-    5. If you see an x in the string next to the file name you were adding execute permissions to, then you have done this correctly
+    1. If you see an x in the string next to the file name you were adding execute permissions to, then you have done this correctly
 
 ## Goals
 Be able to run get-distro-type.sh and have the version of Linux you are running and offer to install software for your system automatically, completely hands off.  So when you return to your desktop, you have a completely set up desktop ready to go.
