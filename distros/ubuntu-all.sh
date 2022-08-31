@@ -84,7 +84,6 @@ echo "####################  Completed Software Install  #######################"
 echo "################################################################"
 echo "#                                                              #"
 echo "#                    Completed ubuntu-all.sh                   #"
-echo "#                 Please restart your copmputer!               #"
 echo "#                                                              #"
 echo "################################################################"
 
