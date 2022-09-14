@@ -17,6 +17,9 @@ Linux Mint desktop environment is similar enough to Windows that you will not fe
 ### The get-distro-type.sh script is not ready yet. DO NOT RUN YET.  But in the distro folder you can choose the installation script per distro and run from there.
 1. When you have installed the Linux Distro of choice, you will then need to navigate to https://github.com/LoadingStill/Linux
     1. Download with the terminal
+        '''
+        wget https://github.com/LoadingStill/Linux
+        '''
     2. Download with a Graphical User Interface
         1. Click the Green Button near the top right of the repository section and select "Download Zip"
         2. When the file is done downloading, you need to do to your downloads folder and right-click on the file you just downloaded.  Click unzip and hit enter
