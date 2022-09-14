@@ -16,12 +16,14 @@ Linux Mint desktop environment is similar enough to Windows that you will not fe
 #### How To Use This Auto-Installing Scripts
 ### The get-distro-type.sh script is not ready yet. DO NOT RUN YET.  But in the distro folder you can choose the installation script per distro and run from there.
 1. When you have installed the Linux Distro of choice, you will then need to navigate to https://github.com/LoadingStill/Linux
-2. Click the Green Button near the top right of the repository section and select "Download Zip"
-3. When the file is done downloading, you need to do to your downloads folder and right-click on the file you just downloaded.  Click unzip and hit enter
-4. Now that the bash scripts are downloaded, we need to make sure the software is allowed to be executed (be able to run).  This is done by running a simple command in the terminal.
+    1. Download with the terminal
+    2. Download with a Graphical User Interface
+        1. Click the Green Button near the top right of the repository section and select "Download Zip"
+        2. When the file is done downloading, you need to do to your downloads folder and right-click on the file you just downloaded.  Click unzip and hit enter
+2. Now that the bash scripts are downloaded, we need to make sure the software is allowed to be executed (be able to run).  This is done by running a simple command in the terminal.
     1. Open the folder we just unzipped from step 3.
     2. And right click inside the folder and click open in terminal.
-5. Run the command "chmod +x FileName"
+3. Run the command "chmod +x FileName"
     1. chmod - means Change Mode
     2. +x means to add executable permissions to the file
     3. chmod may require sudo permissions to run
@@ -30,9 +32,9 @@ Linux Mint desktop environment is similar enough to Windows that you will not fe
             1. changes permission of the single file "get-distro-type.sh" to add executable permissions
         2. sudo chmod +x /distros/debian-all.sh
             1. Adds execution permissions to the single file "debian-all.sh" in the file "/distros"
-6. you can check the permissions by running ls -l
+4. you can check the permissions by running ls -l
     1. If you see an x in the string next to the file name you were adding execute permissions to, then you have done this correctly
-7. Now to run the script you will type ./FileName
+5. Now to run the script you will type ./FileName
     1. Example of the command:
         1. ./get-distro-type.sh
             1. This command runs the file "get-distro-type.sh" and executes what ever that script is asking for.
