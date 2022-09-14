@@ -1,6 +1,7 @@
 #!/bin/bash
 
 
+
 #Vatiables
 ip4=$(/sbin/ip -o -4 addr list eth0 | awk '{print $4}' | cut -d/ -f1) #IPv4 address
 #ip6=$(/sbin/ip -o -6 addr list eth0 | awk '{print $4}' | cut -d/ -f1) #IPv6 address
