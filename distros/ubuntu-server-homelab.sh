@@ -24,8 +24,6 @@ echo "##########################################################################
 
 echo "####################    Updating    #######################"
 sudo apt update -y
-sudo apt upgrade -y
-#sudo apt dist-upgrade
 echo "####################    Updated    #######################"
 
 
@@ -55,14 +53,15 @@ echo "####################    Software Installed   #######################"
 #echo "####################    Setting Up fstab     ####################"
 #sudo mkdir /mnt/media
 #sudo apt install nfs-common -y
-#sudo echo 'nasIP:/mount/directory/folder  /mnt/media  nfs auto,nofail,noatime,nolock,intr,tcp,actimeo=1800 0 0' >> /etc/fstab
+#sudo echo 'nfsIP:/mount/directory/folder  /mnt/media  nfs auto,nofail,noatime,nolock,intr,tcp,actimeo=1800 0 0' >> /etc/fstab
 #echo "####################  fstab setup completed  ####################"
 
 
 
 echo "####################    Updating    #######################"
-sudo apt update
+sudo apt update -y
 sudo apt upgrade -y
+#sudo apt dist-upgrade
 sudo apt autoremove -y
 echo "####################    Updated    ########################"
 
