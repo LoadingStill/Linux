@@ -32,7 +32,7 @@ echo "####################    Installing Software  #######################"
 sh software/apt/install-homelab-jellyfin.sh #installs jellyfin
 echo 'jellyfin installed - $ip4:8096' >> /home/$USERNAME/servarrInfo
 
-sh software/ubuntu/install-homelab-servarr-sonarr.sh #installs sonarr
+sh software/ubuntu/20.04-homelab-install-sonarr.sh #installs sonarr
 echo 'sonarr installed - $ip4:8989' >> /home/$USERNAME/servarrInfo
 
 sh software/apt/install-homelab-servarr-radarr.sh #installs radarr
