@@ -50,7 +50,7 @@ echo "####################    Software Installed   #######################"
 
 
 
-#echo "####################    Setting Up fstab     ####################"
+#echo "####################    setting Up fstab     ####################"
 #sudo mkdir /mnt/media
 #sudo apt install nfs-common -y
 #sudo echo 'nfsIP:/mount/directory/folder  /mnt/media  nfs auto,nofail,noatime,nolock,intr,tcp,actimeo=1800 0 0' >> /etc/fstab
