@@ -39,16 +39,16 @@ echo 'readarr installed - LOCALIP:8787' >> /home/$USERNAME/servarrInfo
 sh software/apt/install-homelab-servarr-prowlarr.sh #installs prowlarr
 echo 'prowlarr installed - LOCALIP:9696' >> /home/$USERNAME/servarrInfo
 
-sh software/apt/install-homelab-sabnzbd.sh #installs prowlarr
+sh software/apt/install-homelab-sabnzbd.sh #installs sabnzbd
 echo 'sabnzbd installed - LOCALIP:8080' >> /home/$USERNAME/servarrInfo
 echo "####################    Software Installed   #######################"
 
 
-echo "####################    Setting Up fstab     ####################"
-sudo mkdir /mnt/media
-sudo apt install nfs-common -y
-sudo echo '10.1.1.26:/mnt/servarr/media  /mnt/media  nfs auto,nofail,noatime,nolock,intr,tcp,actimeo=1800 0 0' >> /etc/fstab
-echo "####################  fstab setup completed  ####################"
+#echo "####################    Setting Up fstab     ####################"
+#sudo mkdir /mnt/media
+#sudo apt install nfs-common -y
+#sudo echo 'nasIP:/mount/directory/folder  /mnt/media  nfs auto,nofail,noatime,nolock,intr,tcp,actimeo=1800 0 0' >> /etc/fstab
+#echo "####################  fstab setup completed  ####################"
 
 
 
