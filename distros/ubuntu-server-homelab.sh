@@ -6,8 +6,12 @@ ip4=$(/sbin/ip -o -4 addr list eth0 | awk '{print $4}' | cut -d/ -f1) #IPv4 addr
 #ip6=$(/sbin/ip -o -6 addr list eth0 | awk '{print $4}' | cut -d/ -f1) #IPv6 address
 USERNAME="$(whoami)" #username
 
+
+
 #create file with info on what was done saved to /home/$USERNAME/servarrInfo
 touch /home/$USERNAME/servarrInfo
+
+
 
 echo "###############################################################################"
 echo "#                                                                             #"
@@ -46,6 +50,7 @@ echo 'sabnzbd installed - $ip4:8080' >> /home/$USERNAME/servarrInfo
 echo "####################    Software Installed   #######################"
 
 
+
 #echo "####################    Setting Up fstab     ####################"
 #sudo mkdir /mnt/media
 #sudo apt install nfs-common -y
@@ -59,9 +64,6 @@ sudo apt update
 sudo apt upgrade -y
 sudo apt autoremove -y
 echo "####################    Updated    ########################"
-
-
-
 
 
 
@@ -86,5 +88,7 @@ echo "Rebooting in 1     Press Ctrl + C to cancel"
 sleep 1
 echo "Rebooting in 0     Press Ctrl + C to cancel"
 echo "####################    Rebooting    #######################"
+
+
 
 sudo reboot now
