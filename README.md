@@ -31,7 +31,7 @@ Linux Mint desktop environment is similar enough to Windows that you will not fe
     4. example of the command:
         1. `chmod +x get-distro-type.sh`
             1. changes permission of the single file "get-distro-type.sh" to add executable permissions
-        2. sudo chmod +x /distros/debian-all.sh
+        2. `sudo chmod +x /distros/debian-all.sh`
             1. Adds execution permissions to the single file "debian-all.sh" in the file "/distros"
 4. you can check the permissions by running ls -l
     1. If you see an x in the string next to the file name you were adding execute permissions to, then you have done this correctly
@@ -39,7 +39,7 @@ Linux Mint desktop environment is similar enough to Windows that you will not fe
     1. Example of the command:
         1. `./get-distro-type.sh`
             1. This command runs the file "get-distro-type.sh" and executes what ever that script is asking for.
-        3. ./distros/debian-all.sh
+        3. `./distros/debian-all.sh`
             1. This command runs the file "debian-all" in the file "/distros" and executes what ever that script is asking for.
 
 ## Goals
