@@ -44,7 +44,7 @@ echo 'readarr installed - $ip4:8787' >> /home/$USERNAME/servarrInfo
 sh software/apt/install-homelab-servarr-prowlarr.sh #installs prowlarr
 echo 'prowlarr installed - $ip4:9696' >> /home/$USERNAME/servarrInfo
 
-sh software/apt/install-homelab-sabnzbd.sh #installs sabnzbd
+sh software/ubuntu/20.04-homelab-install-sabnzbd.sh #installs sabnzbd
 echo 'sabnzbd installed - $ip4:8080' >> /home/$USERNAME/servarrInfo
 echo "####################    Software Installed   #######################"
 
