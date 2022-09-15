@@ -5,6 +5,8 @@ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 2009837CB
 echo "deb https://apt.sonarr.tv/debian buster main" | sudo tee /etc/apt/sources.list.d/sonarr.list
 sudo apt update
 sudo apt install sonarr
+sudo systemctl enable sonarr
+sudo systemctl start sonarr
 #Browse to http://localhost:8989 to start using Sonarr.
 #(Replace 'localhost' with your server IP if you're connecting remotely)
 echo "########################  Sonarr Installed  #######################"
