@@ -43,3 +43,5 @@ next step is to remove numbers from os-release
 
 
 #https://linuxhint.com/remove_characters_string_bash/
+
+#http://linuxmafia.com/faq/Admin/release-files.html
