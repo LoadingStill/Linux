@@ -29,6 +29,9 @@ echo "####################    Updated    #######################"
 
 
 echo "####################    Installing Software  #######################"
+sh software/apt/install-homelab-docker.sh #installs docker
+echo 'docker installed' >> /home/$USERNAME/servarrInfo
+
 sh software/apt/install-homelab-jellyfin.sh #installs jellyfin
 echo 'jellyfin installed - $ip4:8096' >> /home/$USERNAME/servarrInfo
 
