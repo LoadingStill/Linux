@@ -30,9 +30,13 @@ sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
  
 
+#start docker and start docker on boot
 sudo service docker start
-
-
+sudo systemctl enable docker.service
+sudo systemctl enable containerd.service
+#stop docker from starting on boot
+#sudo systemctl disable docker.service
+#sudo systemctl disable containerd.service
 
 #Troubleshooting:
 
@@ -46,5 +50,6 @@ sudo service docker start
 #sudo chmod g+rwx "$HOME/.docker" -R
 
 
-
+#resources
+#https://docs.docker.com/engine/install/linux-postinstall/
 echo "########################  docker  installed  #######################"
