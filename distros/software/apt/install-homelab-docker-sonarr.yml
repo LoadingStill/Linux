@@ -1,5 +1,5 @@
 #echo "####################    Sonarr Docker Installing    #######################"
-
+mkdir /var/lib/docker/install-homelab-docker-sonarr.yml
 printf
 "--- \n
 version: "2.1" \n
