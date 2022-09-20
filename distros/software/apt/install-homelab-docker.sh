@@ -52,4 +52,5 @@ sudo systemctl enable containerd.service
 
 #resources
 #https://docs.docker.com/engine/install/linux-postinstall/
+#https://adamtheautomator.com/docker-compose-tutorial/
 echo "########################  docker  installed  #######################"
