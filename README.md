@@ -2,6 +2,8 @@
 
 The reason for this repository is to help auto set up some Linux distrobutions in one go, so you do not need to monitor your new set up and just let the software you want to, install.
 
+## Goals
+Be able to run get-distro-type.sh and have the version of Linux you are running and offer to install software for your system automatically, completely hands off.  So when you return to your desktop, you have a completely set up desktop ready to go.
 
 ## Where to Start?
 If you are new to Linux, please read this whole page before doing anything.  I would recommend starting with Linux Mint Cinnamon Edition, this Linux distribution is a good place to start when switching from Windows to Linux.
