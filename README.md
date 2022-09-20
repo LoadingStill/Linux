@@ -13,6 +13,13 @@ Linux Mint desktop environment is similar enough to Windows that you will not fe
 * Download Page Link: https://linuxmint.com/edition.php?id=299
 * Linux Mint Installation Guide Link: https://linuxmint-installation-guide.readthedocs.io/en/latest/
 
+#### Recommended Linux Distro For Home Server
+Ubuntu Server is a good distro to start with for running a HomeLab on Linux.   You can run a server on Windows 10, MacOS, and other Linux distros but Ubuntu Server is very common and a lot of guides will be avalable for this Operating System while you learn.
+* Ubunt Homepage: https://ubuntu.com/
+* Download Page: https://ubuntu.com/download/server
+* Ubuntu Server Install Guide: https://ubuntu.com/tutorials/install-ubuntu-server#1-overview
+I will be using Ubutnu Server and Debian Server in this guide.  Ubuntu is based on Debian, in the same way that Samsung Tyzen phone Operating system is based on Google's Android Operating System.  A lot of things are simular but there are differences.
+
 #### How To Use This Auto-Installing Scripts
 ### The get-distro-type.sh script is not ready yet. DO NOT RUN YET.  But in the distro folder you can choose the installation script per distro and run from there.
 1. When you have installed the Linux Distro of choice, you will then need to navigate to https://github.com/LoadingStill/Linux
