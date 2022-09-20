@@ -1,19 +1,21 @@
 #echo "####################    Sonarr Docker Installing    #######################"
----
-version: "2.1"
-services:
-  sonarr:
-    image: lscr.io/linuxserver/sonarr:latest
-    container_name: sonarr
-    environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=Europe/London
-    volumes:
-      - /path/to/data:/config
-      - /path/to/tvseries:/tv #optional
-      - /path/to/downloadclient-downloads:/downloads #optional
-    ports:
-      - 8989:8989
-    restart: unless-stopped
+
+printf
+"--- \n
+version: "2.1" \n
+services: \n
+  sonarr: \n
+    image: lscr.io/linuxserver/sonarr:latest \n
+    container_name: sonarr \n
+    environment: \n
+      - PUID=1000 \n
+      - PGID=1000 \n
+      - TZ=Europe/London \n
+    volumes: \n
+      - /path/to/data:/config \n
+      - /path/to/tvseries:/tv #optional \n
+      - /path/to/downloadclient-downloads:/downloads #optional \n
+    ports: \n
+      - 8989:8989 \n
+    restart: unless-stopped \n " >> /var/lib/docker/install-homelab-docker-sonarr.yml
 #echo "####################    Sonarr Docker  Installed    #######################"
