@@ -53,6 +53,7 @@ echo "####################    Software Installed   #######################"
 #echo "####################    setting Up fstab     ####################"
 #sudo mkdir /mnt/media
 #sudo apt install nfs-common -y
+#echo 'nfs-commons installed' >> /home/$USERNAME/servarrInfo
 #sudo echo 'nfsIP:/mount/directory/folder  /mnt/media  nfs auto,nofail,noatime,nolock,intr,tcp,actimeo=1800 0 0' >> /etc/fstab
 #echo "####################  fstab setup completed  ####################"
 
