@@ -25,8 +25,8 @@ echo "####################    Install repository    #######################"
 
 echo "####################    Nvidia Driver Installing    #######################"
 #sh software/dnf/driver-nvidia-quadro-p2000.sh
-
 echo "####################    Nvidia Driver Installing    #######################"
+
 
 
 echo "####################    Updating    #######################"
