@@ -6,17 +6,17 @@
 
 
 
-echo "################################################################"
-echo "#                                                              #"
-echo "#                    Fedora Install Scrip                      #"
-echo "#                                                              #"
-echo "################################################################"
+echo "########################################################################################"
+echo "#                                                                                      #"
+echo "#                    Fedora Homelab Headless Server Install Scrip                      #"
+echo "#                                                                                      #"
+echo "########################################################################################"
 
 
 
-echo "####################    dnf settings    #######################"
+echo "####################    editing dnf settings    #######################"
 sh software/dnf/edit-dnf-settings.sh #changes dnf to be faster (edit this bash script if you have a slower computer)
-echo "####################    dnf settings    #######################"
+echo "####################    edited dnf settings     #######################"
 
 
 
@@ -29,16 +29,16 @@ echo "####################    Updated    #######################"
 
 
 
-echo "####################    Install repository    #######################"
+echo "####################    Installing repository    #######################"
 sh software/dnf/repository-rpm-free.sh
 sh software/dnf/repository-rpm-nonfree.sh
-echo "####################    Install repository    #######################"
+echo "####################    Installed repository     #######################"
 
 
 
 echo "####################    Nvidia Driver Installing    #######################"
 #sh software/dnf/driver-nvidia-quadro-p2000.sh
-echo "####################    Nvidia Driver Installing    #######################"
+echo "####################    Nvidia Driver Installed     #######################"
 
 
 
@@ -48,18 +48,18 @@ echo "####################    Software Installed    #######################"
 
 
 
-echo "####################    After Software Updates    #######################"
+echo "####################    After Software Install Updates    #######################"
 sudo dnf upgrade -y
 sudo dnf autoremove
 echo "####################    Completed    #######################"
 
 
 
-eecho "################################################################"
-echo "#                                                              #"
-echo "#                    Completed fedora-all.sh                   #"
-echo "#                                                              #"
-echo "################################################################"
+echo "##################################################################################################"
+echo "#                                                                                                #"
+echo "#                    Completed Fedora Homelab Headless Server Install Scrip                      #"
+echo "#                                                                                                #"
+echo "##################################################################################################"
 
 
 
