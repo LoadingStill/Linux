@@ -4,7 +4,7 @@ sudo dnf upgrade --refresh
 sudo dnf install dnf-plugin-system-upgrade
 sudo dnf system-upgrade download --releasever=36
 sudo dnf system-upgrade reboot
-#sudo dnf distro-sync
+#sudo dnf distro-sync (if things breake run this line by it self)
 echo "####################    System Upgraded    #######################"
 
 echo "####################    Rebooting    #######################"
