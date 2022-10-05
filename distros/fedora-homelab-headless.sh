@@ -2,10 +2,6 @@
 
 
 
-#This 
-
-
-
 echo "########################################################################################"
 echo "#                                                                                      #"
 echo "#                    Fedora Homelab Headless Server Install Scrip                      #"
