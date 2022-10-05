@@ -1,11 +1,18 @@
 #!/bin/bash
 
-sudo dnf system-upgrade reboot
+
+
 echo "################################################################"
 echo "#                                                              #"
 echo "#                    Fedora Install Scrip                      #"
 echo "#                                                              #"
 echo "################################################################"
+
+
+
+echo "####################    dnf settings    #######################"
+sh software/dnf/edit-dnf-settings.sh #changes dnf to be faster (edit this bash script if you have a slower computer)
+echo "####################    dnf settings    #######################"
 
 
 
@@ -55,5 +62,4 @@ echo "Rebooting in 1     Press Ctrl + C to cancel"
 sleep 1
 echo "Rebooting in 0     Press Ctrl + C to cancel"
 echo "####################    Rebooting    #######################"
-
 sudo reboot now
