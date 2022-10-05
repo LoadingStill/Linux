@@ -16,6 +16,12 @@ echo "####################    dnf settings    #######################"
 
 
 
+echo "####################    import repository    #######################"
+sh software/dnf/
+echo "####################    import repository    #######################"
+
+
+
 echo "####################    Updating    #######################"
 #sh software/dnf/system-upgrade.sh #system upgrade
 sh software/dnf/system-update.sh #system update
