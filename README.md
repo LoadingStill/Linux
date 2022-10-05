@@ -24,7 +24,11 @@ Ubuntu Server is a good distro to start with for running a HomeLab on Linux.   Y
 I will be using Ubutnu Server and Debian Server in this guide.  Ubuntu is based on Debian, in the same way that Samsung Tyzen phone Operating system is based on Google's Android Operating System.  A lot of things are simular but there are differences.
 
 ### How To Use This Auto-Installing Scripts
+
+### Disclaimer
 ### The get-distro-type.sh script is not ready yet. DO NOT RUN YET.  But in the distro folder you can choose the installation script per distro and run from there.  Some of the scripts are not complete either for the distros.  But are in progress.
+### As well these scripts have only been tested on my system or writen and NEVER tested.  Run at your own risk.  Please read the scripts to understand what they do.  Nothing is designed to damage your system in any way.  Only to help in first install of software and set up.  Anything beyond that use case I do not have the time to support.  I just wanted a quick way to install a new VM for my homelab and not need to be at my computer for the hour a full set up will take.  If you would like to help pease do.
+
 1. When you have installed the Linux Distro of choice, you will then need to navigate to https://github.com/LoadingStill/Linux
     1. Download with the terminal
         1. `wget https://github.com/LoadingStill/Linux`
