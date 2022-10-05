@@ -16,6 +16,15 @@ echo "####################    dnf settings    #######################"
 
 
 
+echo "####################    Updating    #######################"
+#sh software/dnf/system-upgrade.sh #system upgrade
+sh software/dnf/system-update.sh #system update
+sudo dnf autoremove
+#sudo dnf distro-sync (if autoremove broke something, uncommend this command)
+echo "####################    Updated    #######################"
+
+
+
 echo "####################    Install repository    #######################"
 sh software/dnf/repository-rpm-free.sh
 sh software/dnf/repository-rpm-nonfree.sh
@@ -26,15 +35,6 @@ echo "####################    Install repository    #######################"
 echo "####################    Nvidia Driver Installing    #######################"
 #sh software/dnf/driver-nvidia-quadro-p2000.sh
 echo "####################    Nvidia Driver Installing    #######################"
-
-
-
-echo "####################    Updating    #######################"
-#sh software/dnf/system-upgrade.sh #system upgrade
-sh software/dnf/system-update.sh #system update
-sudo dnf autoremove
-#sudo dnf distro-sync (if autoremove broke something, uncommend this command)
-echo "####################    Updated    #######################"
 
 
 
