@@ -1,16 +1,16 @@
 #!/bin/bash
 echo "####################    Cockpit Project Installing   #######################"
-sudo dnf install cockpit
+sudo dnf install -y cockpit
 sudo systemctl enable --now cockpit.socket
 sudo firewall-cmd --add-service=cockpit
 sudo firewall-cmd --add-service=cockpit --permanent
-sudo dnf install cockpit-machines
-sudo dnf install cockpit-podman
-sudo dnf install cockpit-kdump
-sudo dnf install cockpit-certificates
-sudo dnf install cockpit-sosreport
-sudo dnf install cockpit-composer
-sudo dnf install cockpit-389-ds
-sudo dnf install cockpit-session-recording
+sudo dnf install -y cockpit-machines
+sudo dnf install -y cockpit-podman
+sudo dnf install -y cockpit-kdump
+sudo dnf install -y cockpit-certificates
+sudo dnf install -y cockpit-sosreport
+sudo dnf install -y cockpit-composer
+sudo dnf install -y cockpit-389-ds
+sudo dnf install -y cockpit-session-recording
 
 echo "####################    Cockpit Project Installed    #######################"
