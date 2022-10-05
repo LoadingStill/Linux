@@ -17,7 +17,7 @@ echo "####################    edited dnf settings     #######################"
 
 
 echo "####################    editing fstab settings    #######################"
-sh software/dnf/edit-fstab-nfs-add.sh #YOU NEED TO EDIT THIS FILE FOR THIS TO WORK
+sh software/dnf/edit-fstab-add-nfs.sh #YOU NEED TO EDIT THIS FILE FOR THIS TO WORK
 echo "####################    edited fstab settings     #######################"
 
 
