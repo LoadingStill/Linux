@@ -1,9 +1,4 @@
 #!/bin/bash
 echo "########################  flatpack installing  #######################"
-# Installing a package
-flatpak install fedora $APPLICATION
-# Removing a package
-flatpak remove $APPLICATION
-# Updating packages
-flatpak update
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 echo "########################  flatpack  installed  #######################"
