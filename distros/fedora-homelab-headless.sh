@@ -43,16 +43,13 @@ echo "####################    Nvidia Driver Installing    ######################
 
 
 echo "####################    Installing Software   #######################"
-sh software/dnf/install-flatpack.sh
-sh software/dnf/install-retroarch.sh
-sh software/dnf/install-obs.sh
-sh software/apt/install-discord.sh
+#N/A
 echo "####################    Software Installed    #######################"
 
 
 
 echo "####################    After Software Updates    #######################"
-sudo dnf upgrade
+sudo dnf upgrade -y
 sudo dnf autoremove
 echo "####################    Completed    #######################"
 
