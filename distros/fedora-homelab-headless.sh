@@ -16,6 +16,12 @@ echo "####################    edited dnf settings     #######################"
 
 
 
+echo "####################    editing fstab settings    #######################"
+sh software/dnf/edit-fstab-nfs-add.sh #YOU NEED TO EDIT THIS FILE FOR THIS TO WORK
+echo "####################    edited fstab settings     #######################"
+
+
+
 echo "####################    Updating    #######################"
 #sh software/dnf/system-upgrade.sh #system upgrade (COMMENT OUT AFTER FIRST RUN)
 sh software/dnf/system-update.sh #system update (COMMENT OUT AFTER FIRST RUN)
@@ -39,7 +45,15 @@ echo "####################    Nvidia Driver Installed     ######################
 
 
 echo "####################    Installing Software   #######################"
-#N/A
+
+echo "####################    System Administration Tools   #######################"
+sh software/dnf/system-admin-tool-cockpit-project.sh
+echo "####################    System Ddministration Tools   #######################"
+
+echo "####################    Self-Hosted Software   #######################"
+
+echo "####################    Self-Hosted Software   #######################"
+
 echo "####################    Software Installed    #######################"
 
 
