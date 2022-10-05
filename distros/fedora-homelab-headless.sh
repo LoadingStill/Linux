@@ -17,8 +17,8 @@ echo "####################    dnf settings    #######################"
 
 
 echo "####################    Updating    #######################"
-sudo dnf upgrade --refresh
-sudo dnf install dnf-plugin-system-upgrade
+#sh software/dnf/system-upgrade.sh #system upgrade
+sh software/dnf/system-update.sh #system update
 sudo dnf distro-sync
 sudo dnf autoremove
 echo "####################    Updated    #######################"
