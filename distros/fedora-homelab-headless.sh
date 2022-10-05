@@ -32,8 +32,8 @@ echo "####################    Updated    #######################"
 
 
 echo "####################    Installing repository    #######################"
-sh software/dnf/repository-rpm-free.sh
-sh software/dnf/repository-rpm-nonfree.sh
+sh software/dnf/repository-rpm-free.sh                 #installs free rmp repository
+sh software/dnf/repository-rpm-nonfree.sh              #installs non-free rpm repository
 echo "####################    Installed repository     #######################"
 
 
@@ -47,11 +47,12 @@ echo "####################    Nvidia Driver Installed     ######################
 echo "####################    Installing Software   #######################"
 
 echo "####################    System Administration Tools   #######################"
-sh software/dnf/system-admin-tool-cockpit-project.sh
+sh software/dnf/system-admin-tool-cockpit-project.sh        #installs cockpit project
+sh software/dnf/system-admin-tool-grafana-oss.sh            #installs grafana oss
 echo "####################    System Ddministration Tools   #######################"
 
 echo "####################    Self-Hosted Software   #######################"
-sh software/dnf/install-jellyfin.sh
+sh software/dnf/install-jellyfin.sh                  #installs jellyfin
 echo "####################    Self-Hosted Software   #######################"
 
 echo "####################    Software Installed    #######################"
