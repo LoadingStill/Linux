@@ -51,7 +51,7 @@ sh software/dnf/system-admin-tool-cockpit-project.sh
 echo "####################    System Ddministration Tools   #######################"
 
 echo "####################    Self-Hosted Software   #######################"
-
+sh software/dnf/install-jellyfin.sh
 echo "####################    Self-Hosted Software   #######################"
 
 echo "####################    Software Installed    #######################"
