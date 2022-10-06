@@ -25,7 +25,6 @@ echo "####################    edited fstab settings     #######################"
 echo "####################    Updating    #######################"
 #sh software/dnf/system-upgrade.sh #system upgrade (COMMENT OUT AFTER FIRST RUN)
 sh software/dnf/system-update.sh #system update (COMMENT OUT AFTER FIRST RUN)
-sudo dnf autoremove
 #sudo dnf distro-sync (if autoremove broke something, uncommend this command)
 echo "####################    Updated    #######################"
 
