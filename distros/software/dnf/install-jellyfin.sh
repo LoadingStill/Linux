@@ -7,6 +7,9 @@ sudo systemctl start jellyfin
 sudo systemctl enable jellyfin
 sudo firewall-cmd --permanent --add-service=jellyfin
 #sudo systemctl reboot
+
+
+echo 'jellyifn installed and set to start on boot' >> /home/$(whoami)/info/log #add info to log
 echo "####################    Jellyfin Installed    #######################"
 
 
