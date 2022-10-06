@@ -7,12 +7,16 @@ echo "####################    Gameyfin Installing    #######################"
 
 
 sudo dnf install -y java-latest-openjdk.x86_64
-mkdir install_script/
-mkdir install_script/gameyfin
+mkdir /home/$(whoami)/servarrInfo/install_script/
+mkdir /home/$(whoami)/servarrInfo/install_script/gameyfin
 cd install_script/gameyfin/
 wget https://github.com/grimsi/gameyfin/releases/download/v1.2.1/gameyfin-1.2.1.jar
 wget https://github.com/grimsi/gameyfin/releases/download/v1.2.1/gameyfin.properties
 cd
+
+
+echo 'radarr installed - $ip4:7878' >> /home/$(whoami)/servarrInfo
+
 
 
 #to run this program you need to edit the properties 
