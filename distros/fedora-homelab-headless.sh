@@ -9,6 +9,10 @@ echo "#                                                                         
 echo "########################################################################################"
 
 
+echo "####################    create log & info    #######################"
+sh software/dnf/system-log.sh #makes a log that shows what has been done with this script. (I am still adding this funtion in)
+echo "####################    log file created     #######################"
+
 
 echo "####################    editing dnf settings    #######################"
 sh software/dnf/edit-dnf-settings.sh #changes dnf to be faster (edit this bash script if you have a slower computer)
