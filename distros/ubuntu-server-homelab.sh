@@ -5,12 +5,12 @@
 #Vatiables
 ip4=$(/sbin/ip -o -4 addr list eth0 | awk '{print $4}' | cut -d/ -f1) #IPv4 address
 #ip6=$(/sbin/ip -o -6 addr list eth0 | awk '{print $4}' | cut -d/ -f1) #IPv6 address
-USERNAME="$(whoami)" #username
+#USERNAME="$(whoami)" #username (replaces $USERNAME to $(whoami)
 
 
 
 #create file with info on what was done saved to /home/$USERNAME/servarrInfo
-touch /home/$USERNAME/servarrInfo
+touch /home/$(whoami)/servarrInfo
 
 
 
