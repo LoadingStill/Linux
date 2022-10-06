@@ -1,4 +1,5 @@
 !#/bin/bash
 echo "########################  libreoffice installing  #######################"
-sudo pacman -Syu libreoffice-fresh
+sudo dnf install -y libreoffice
+echo 'libreoffice installed' >> /home/$(whoami)/info/log #add info to log
 echo "########################  libreoffice  installed  #######################"
