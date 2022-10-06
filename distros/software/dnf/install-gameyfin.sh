@@ -4,6 +4,7 @@
 echo "####################    Gameyfin Installing    #######################"
 #you need java version 18+ and you need to download the .jar release from gameyfin github (2files .jar and .properties)
 #https://github.com/grimsi/gameyfin
+#https://api-docs.igdb.com/#about
 
 
 sudo dnf install -y java-latest-openjdk.x86_64
@@ -15,7 +16,7 @@ wget https://github.com/grimsi/gameyfin/releases/download/v1.2.1/gameyfin.proper
 cd
 
 
-echo 'radarr installed - $ip4:7878' >> /home/$(whoami)/servarrInfo
+echo 'gameyfin doenloaded, you NEED to edit the properties file before you can run this program. location /home/$(whoami)/servarrInfo/install_script/gameyfin' >> /home/$(whoami)/servarrInfo
 
 
 
