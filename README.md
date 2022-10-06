@@ -34,7 +34,7 @@ I will be using Ubutnu Server and Debian Server in this guide.  Ubuntu is based 
         1. `wget https://github.com/LoadingStill/Linux`
     2. Download with a Graphical User Interface
         1. Click the Green Button near the top right of the repository section and select "Download Zip"
-        2. When the file is done downloading, you need to do to your downloads folder and right-click on the file you just downloaded.  Click unzip and hit enter
+        2. When the file is done downloading, you need to go to your downloads folder and right-click on the file you just downloaded.  Click unzip and hit enter
 2. Now that the bash scripts are downloaded, we need to make sure the software is allowed to be executed (be able to run).  This is done by running a simple command in the terminal.
     1. Open the folder we just unzipped from step 3.
     2. And right click inside the folder and click open in terminal.
