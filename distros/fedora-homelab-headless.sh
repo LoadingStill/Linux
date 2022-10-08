@@ -21,8 +21,15 @@ echo "####################    edited dnf settings     #######################"
 
 
 echo "####################    editing fstab settings    #######################"
-sh software/dnf/edit-fstab-add-nfs.sh #YOU NEED TO EDIT THIS FILE FOR THIS TO WORK
+#sh software/dnf/edit-fstab-add-nfs.sh #YOU NEED TO EDIT THIS FILE FOR THIS TO WORK
 echo "####################    edited fstab settings     #######################"
+
+
+
+echo "####################    Installing repository    #######################"
+sh software/dnf/repository-rpm-free.sh                 #installs free rmp repository
+sh software/dnf/repository-rpm-nonfree.sh              #installs non-free rpm repository
+echo "####################    Installed repository     #######################"
 
 
 
@@ -34,15 +41,9 @@ echo "####################    Updated    #######################"
 
 
 
-echo "####################    Installing repository    #######################"
-sh software/dnf/repository-rpm-free.sh                 #installs free rmp repository
-sh software/dnf/repository-rpm-nonfree.sh              #installs non-free rpm repository
-echo "####################    Installed repository     #######################"
-
-
-
 echo "####################    Nvidia Driver Installing    #######################"
 #sh software/dnf/driver-nvidia-quadro-p2000.sh
+#sh software/dnf/driver-nvidia-gtx-1060.sh
 echo "####################    Nvidia Driver Installed     #######################"
 
 
