@@ -54,6 +54,8 @@ echo "####################    Nvidia Driver Installed     ######################
 
 echo "####################    Installing Software   #######################"
 sh software/dnf-flatpack/install-flatpack-jellyfin.sh #installs jellyfin desktop client
+sh software/dnf/install-vlc.sh #insatlls tvlc
+sh software/dnf/install-timeshift.sh #insatlls timeshift
 echo "####################    Software Installed    #######################"
 
 
