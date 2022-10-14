@@ -31,8 +31,8 @@ echo "####################    edited fstab settings     #######################"
 echo "####################    Installing repository    #######################"
 sh software/dnf/repository-rpm-free.sh                     #installs free rmp repository
 sh software/dnf/repository-rpm-nonfree.sh                  #installs non-free rpm repository
-sh software/dnf-flatpack/repository-add-fedora-flathub.sh  #installs fedora flatpack repository
-#sh software/dnf-flatpack/repository-add-flathub.sh         #installs flathub repository
+#sh software/dnf-flatpack/repository-add-fedora-flathub.sh  #installs fedora flatpack repository
+sh software/dnf-flatpack/repository-add-flathub.sh         #installs flathub repository
 echo "####################    Installed repository     #######################"
 
 
