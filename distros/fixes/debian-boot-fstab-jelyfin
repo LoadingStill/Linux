@@ -1,20 +1,12 @@
-#location
-  /etc/systemd/system/my_script.service
+#create .sh script for remounting the NAS listed in fstab and restarting jellyfin service
 
-#what is in the file
-  [Unit]
-  Description=My script that requires network
-  After=network.target
-
-  [Service]
-  Type=oneshot
-  ExecStart=/full/path/to/my_script.sh
-
-  [Install]
-  WantedBy=multi-user.target
+touch fix.sh
+echo -e "sudo mount -a\n sudo systemctl restart jellyfin" >> fix.sh
+sudo echo -e "[Unit]\nDescription=Script that remounts nas and restarts jellyfin after a boot\nAfter=network.target\n\n[Service]\nType=oneshot\nExecStart=/full/path/to/my_script.sh\n\n[Install]\nWantedBy=multi-user.target" >> /etc/systemd/system/fix_script.service
+sudo systemctl daemon-reload
+sudo systemctl enable my_script
 
 
 
-#system commands
-  sudo systemctl daemon-reload
-  sudo systemctl enable my_script
+#source
+  #https://unix.stackexchange.com/questions/57852/how-do-i-start-a-cron-job-1-min-after-reboot
