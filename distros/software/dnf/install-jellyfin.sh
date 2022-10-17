@@ -16,9 +16,11 @@ wget https://repo.jellyfin.org/releases/server/fedora/stable/web/jellyfin-web-10
 cd /jellyfin
 sudo rpm -i jellyfin-server-10.8.5-1.fc36.x86_64.rpm
 sudo rpm -i jellyfin-web-10.8.5-1.fc36.noarch.rpm
+cd
 
 #start on boot
-sudo echo -e "[Unit]\nDescription=Jellyfin\nAfter=network.target\n\n[Service]\nType=simple\nUser=youruser\nRestart=always\nRestart=always\nExecStart=/opt/jellyfin/jellyfin.sh\n\n[Install]\nWantedBy=multi-user.target" >> /etc/systemd/system/jellyfin.service
+  #change 'youruser' to the user you want to run this program at boot with 
+sudo echo -e "[Unit]\nDescription=Jellyfin\nAfter=network.target\n\n[Service]\nType=simple\nUser=youruser\nRestart=always\nExecStart=/opt/jellyfin/jellyfin.sh\n\n[Install]\nWantedBy=multi-user.target" >> /etc/systemd/system/jellyfin.service
 sudo chmod 644 jellyfin.service
 sudo systemctl daemon-reload
 sudo systemctl enable jellyfin.service
