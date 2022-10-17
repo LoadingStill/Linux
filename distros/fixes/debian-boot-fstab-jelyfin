@@ -1,0 +1,20 @@
+#location
+  /etc/systemd/system/my_script.service
+
+#what is in the file
+  [Unit]
+  Description=My script that requires network
+  After=network.target
+
+  [Service]
+  Type=oneshot
+  ExecStart=/full/path/to/my_script.sh
+
+  [Install]
+  WantedBy=multi-user.target
+
+
+
+#system commands
+  sudo systemctl daemon-reload
+  sudo systemctl enable my_script
