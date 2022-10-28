@@ -45,10 +45,10 @@ echo "####################    Updated    #######################"
 
 
 
-echo "####################    Nvidia Driver Installing    #######################"
+echo "####################    GPU Driver Installing    #######################"
 #sh software/dnf/driver-nvidia-quadro-p2000.sh
 #sh software/dnf/driver-nvidia-gtx-1060.sh
-echo "####################    Nvidia Driver Installed     #######################"
+echo "####################    GPU Driver Installed     #######################"
 
 
 
