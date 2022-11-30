@@ -13,7 +13,7 @@ sudo systemctl reboot
 #start on boot
   #change 'youruser' to the user you want to run this program at boot with 
 sudo echo -e "[Unit]\nDescription=Jellyfin\nAfter=network.target\n\n[Service]\nType=simple\nUser=youruser\nRestart=always\nExecStart=/opt/jellyfin/jellyfin.sh\n\n[Install]\nWantedBy=multi-user.target" >> /etc/systemd/system/jellyfin.service
-sudo chmod 644 jellyfin.service
+sudo chmod 644 jellyfin.service #sets permissions to owner read and write, group read, other read
 sudo systemctl daemon-reload
 sudo systemctl enable jellyfin.service
 sudo systemctl start jellyfin.service
