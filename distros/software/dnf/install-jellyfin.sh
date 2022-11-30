@@ -3,8 +3,8 @@ echo "####################    Jellyfin Installing   #######################"
 #jellyfin offical instructions for installing jellyifn on fedora
 sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
   #You will need to enable rpmfusion as ffmpeg is a dependency of the jellyfin server package
-sudo dnf install https://repo.jellyfin.org/releases/server/fedora/stable/server/jellyfin-server-10.8.5-1.fc36.x86_64.rpm
-sudo dnf install https://repo.jellyfin.org/releases/server/fedora/stable/web/jellyfin-web-10.8.5-1.fc36.noarch.rpm
+sudo dnf install https://repo.jellyfin.org/releases/server/fedora/versions/stable/server/10.8.8/jellyfin-server-10.8.8-1.fc36.x86_64.rpm
+sudo dnf install https://repo.jellyfin.org/releases/server/fedora/versions/stable/web/10.8.8/jellyfin-web-10.8.8-1.fc36.noarch.rpm
 sudo systemctl start jellyfin
 sudo systemctl enable jellyfin
 sudo firewall-cmd --permanent --add-service=jellyfin
