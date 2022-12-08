@@ -3,6 +3,8 @@ next step is to remove numbers from os-release
 
 
 #!/bin/bash
+
+chmod -R +x /distros #makes everything in the /distros folder executable (does not run the programs, this only makes them able to run when/if the user wants or allows this script to auto run everything for the use)
         #uname -v
         egrep '^(ID_LIKE|VERSION|NAME)=' /etc/os-release
 
