@@ -12,7 +12,7 @@ ansible -i /path/to/file example -m ping -u userName
 # '-i' - tell ansible look for inventory file
 # /path/to/file - path to the inventory file
 # 'example' - group name of inventory
-# '-m' - unknown
+# '-m' - module ???
 # 'ping' - ping the servers in the group
 # '-u' - use the user
 # 'userName' - the user name for the '-u' use user command
