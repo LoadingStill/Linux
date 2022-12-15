@@ -6,7 +6,7 @@ www.example.com #Hostname of the servers you want to be in the inventory
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 #Command to tell ansible where the inventory file is
-ansible -i /path/to/file example -m ping
+ansible -i /path/to/file example -m ping -u userName
 
 # 'ansible' - command to state what program
 # '-i' - tell ansible look for inventory file
@@ -14,3 +14,5 @@ ansible -i /path/to/file example -m ping
 # 'example' - group name of inventory
 # '-m' - unknown
 # 'ping' - ping the servers in the group
+# '-u' - use the user
+# 'userName' - the user name for the '-u' use user command
