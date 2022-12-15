@@ -1,0 +1,12 @@
+[example] #name of the group of servers
+192.168.XXX.XXX #IP address of the servers you want to be in the inventory
+www.example.com #Hostname of the servers you want to be in the inventory
+
+
+
+#Command to tell ansible where the inventory file is
+ansible -i /path/to/file
+
+# 'ansible' - command to state what program
+# '-i' - tell ansible look for inventory file
+# /path/to/file - path to the inventory file
