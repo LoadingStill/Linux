@@ -2,11 +2,15 @@
 192.168.XXX.XXX #IP address of the servers you want to be in the inventory
 www.example.com #Hostname of the servers you want to be in the inventory
 
-
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 #Command to tell ansible where the inventory file is
-ansible -i /path/to/file
+ansible -i /path/to/file example -m ping
 
 # 'ansible' - command to state what program
 # '-i' - tell ansible look for inventory file
 # /path/to/file - path to the inventory file
+# 'example' - group name of inventory
+# '-m' - unknown
+# 'ping' - ping the servers in the group
