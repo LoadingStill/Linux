@@ -16,4 +16,5 @@ Guides Offical:
 
 
 Reliable 3rd party:
-* https://leanpub.com/ansible-for-devops/c/BNfe9ZHisLc0 (Jeff Geerling)
+* https://leanpub.com/ansible-for-devops/c/BNfe9ZHisLc0 (Book By: Jeff Geerling - Updated reguraly)
+* https://www.jeffgeerling.com/project/ansible-101-youtube-series (YouTube series by Jeff Geerling)
