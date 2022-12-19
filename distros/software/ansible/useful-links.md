@@ -13,3 +13,7 @@ Guides Offical:
 3rd Party:
 * https://www.digitalocean.com/community/cheatsheets/how-to-use-ansible-cheat-sheet-guide (2019)
 * https://www.reddit.com/r/ansible/ (Reddit, not very reliable but good in a pinch)
+
+
+Reliable 3rd party:
+* https://leanpub.com/ansible-for-devops/c/BNfe9ZHisLc0 (Jeff Geerling)
