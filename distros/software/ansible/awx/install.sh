@@ -5,3 +5,6 @@
 #https://github.com/ansible/awx-operator (perfered way to install AWX)
 
 
+#AWX CLI
+pip3 install awxkit
+awx --help
