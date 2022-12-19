@@ -35,6 +35,8 @@ images:
 namespace: awx
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+
+#Finally, run kustomize again to create the AWX instance in your cluster:
 kubectl get pods -n awx
 
 
