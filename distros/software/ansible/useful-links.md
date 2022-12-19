@@ -10,5 +10,6 @@ Guides Offical:
 * https://docs.ansible.com/ansible/latest/getting_started/index.html
 * https://docs.ansible.com/?extIdCarryOver=true&sc_cid=701f2000001OH7YAAW
 
-Guides 3rd Party:
+3rd Party:
 * https://www.digitalocean.com/community/cheatsheets/how-to-use-ansible-cheat-sheet-guide (2019)
+* https://www.reddit.com/r/ansible/ (Reddit, not very reliable but good in a pinch)
