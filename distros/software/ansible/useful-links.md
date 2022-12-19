@@ -7,7 +7,8 @@
 
 
 Guide Offical:
-*https://docs.ansible.com/?extIdCarryOver=true&sc_cid=701f2000001OH7YAAW
+* https://docs.ansible.com/ansible/latest/getting_started/index.html
+* https://docs.ansible.com/?extIdCarryOver=true&sc_cid=701f2000001OH7YAAW
 
 GuideS 3rd Party:
 * https://www.digitalocean.com/community/cheatsheets/how-to-use-ansible-cheat-sheet-guide (2019)
