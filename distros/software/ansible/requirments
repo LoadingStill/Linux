@@ -1,1 +1,2 @@
-Ansible requires Python on the server host and client both.
+Ansible requires Python 3 on the server host and client both.
+https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html
