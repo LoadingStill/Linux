@@ -1,9 +1,9 @@
 #!/bin/bash
 echo "####################    System Upgrading    #######################"
-sudo dnf check-update
+#sudo dnf check-update #If you want to see what is avilabe for updating but not update before you want to see what is changing, run this line by it self.
 sudo dnf update -y
 sudo dnf autoremove
-#sudo dnf distro-sync (if things breake run this line by it self)
+#sudo dnf distro-sync #(if things breake run this line by it self)
 echo "####################    System Upgraded    #######################"
 
 
