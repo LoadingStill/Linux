@@ -11,3 +11,6 @@ services:
        volumes:
             - /path/to/appdata/config:/app/config
        restart: unless-stopped
+
+
+#https://hub.docker.com/r/fallenbagel/jellyseerr
