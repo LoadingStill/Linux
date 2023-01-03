@@ -1,4 +1,4 @@
 container-install-uptimekuma.sh
 
 
-compose-homelab-install-all.yml 
+-f compose-homelab-install-all.yml
