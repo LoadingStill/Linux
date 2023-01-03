@@ -1,3 +1,11 @@
+#Installs Jellyseerr:
+
+
+
+
+
+
+
 version: '3'
 services:
     jellyseerr:
