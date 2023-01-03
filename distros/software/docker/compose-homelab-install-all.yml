@@ -1,4 +1,22 @@
-#Installs Jellyseerr:
+echo "########################################################################################"
+echo "#                                                                                      #"
+echo "#                    Docker Homelab Headless Server Install Scrip                      #"
+echo "#                                                                                      #"
+echo "########################################################################################"
+
+
+-f compose-homelab-install-jellyfin.yml #Installs Jellyseerr
+-f compose-homelab-install-jellyseerr.yml #Installs Jellyseerr
+-f compose-homelab-install-lidarr.yml #Lidarr
+-f compose-homelab-install-prowlarr.yml #Prowlarr
+-f compose-homelab-install-qbittorrent.yml #qBittorrent
+-f compose-homelab-install-radarr.yml #Radarr
+-f compose-homelab-install-sabnzbd.yml #Sabnzbd
+-f compose-homelab-install-sonarr.yml #Sonarr
+
+
+sh container-install-uptimekuma.sh #Installs upTime Kuma
+
 
 
 
