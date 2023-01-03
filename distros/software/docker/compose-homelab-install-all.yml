@@ -53,7 +53,6 @@ services:
              - 7878:7878
        restart: unless-stopped
 #https://hub.docker.com/r/linuxserver/radarr
-
     sonarr:
        image: lscr.io/linuxserver/sonarr:latest
        container_name: sonarr
@@ -69,7 +68,6 @@ services:
              - 8989:8989
        restart: unless-stopped
 #https://hub.docker.com/r/linuxserver/sonarr
-       
     prowlarr:
        image: lscr.io/linuxserver/prowlarr:develop
        container_name: prowlarr
@@ -83,9 +81,7 @@ services:
              - 9696:9696
        restart: unless-stopped
 #https://hub.docker.com/r/linuxserver/prowlarr
-
-
-     lidarr:
+    lidarr:
        image: lscr.io/linuxserver/lidarr:latest
        container_name: lidarr
        environment:
@@ -100,8 +96,7 @@ services:
              - 8686:8686
        restart: unless-stopped
  #https://hub.docker.com/r/linuxserver/lidarr
-
-     jellyfin:
+    jellyfin:
        image: lscr.io/linuxserver/jellyfin:latest
        container_name: jellyfin
        environment:
@@ -120,8 +115,7 @@ services:
             - 1900:1900/udp #optional
        restart: unless-stopped
 #https://hub.docker.com/r/linuxserver/jellyfin
-
-     qbittorrent:
+    qbittorrent:
        image: lscr.io/linuxserver/qbittorrent:latest
        container_name: qbittorrent
        environment:
@@ -138,4 +132,3 @@ services:
             - 6881:6881/udp
        restart: unless-stopped
 #https://hub.docker.com/r/linuxserver/qbittorrent
-
