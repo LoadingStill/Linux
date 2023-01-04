@@ -1,4 +1,4 @@
-!#/bin/bash
+#!/bin/bash
 
 #can I change username to $whoami
 
