@@ -8,7 +8,7 @@ sudo echo 'ParallelDownloads = 15' >> sudo /etc/pacman.conf
 
 sudo pacman -Syy
 
-sudo pacman -S thunderbird kmymoney steam discord flatpak libreoffice-still firefox netfetch nano lutris wine winetricks packagekit-qt5 fwupd nfs-utils -y
+sudo pacman -S thunderbird kmymoney steam discord flatpak libreoffice-still firefox netfetch nano lutris wine winetricks packagekit-qt5 fwupd nfs-utils git -y
 
 flatpak install flathub com.github.iwalton3.jellyfin-media-player -y  #jellyfin player
 #flatpak install flathub org.kde.kdenlive                          -y  #kdenlive
