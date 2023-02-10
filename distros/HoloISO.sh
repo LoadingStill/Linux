@@ -2,10 +2,10 @@
 
 passwd #set root password
 
-sudo pacman -Syu
-
 #this will diable read only on your system, steamos locks this down as standard becuase most users will never need it unlocked.  To edit the fstab file (adding network drives that mount on boot), it will need to be unlocked
 sudo steamos-readonly disable
+
+sudo pacman -Syu
 
 sudo pacman-key --init
 sudo pacman-key --populate
