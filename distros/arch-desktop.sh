@@ -11,19 +11,17 @@ sudo pacman -Syy
 sudo pacman -S thunderbird kmymoney steam discord flatpak libreoffice-still firefox netfetch nano lutris wine winetricks packagekit-qt5 fwupd nfs-utils -y
 
 flatpak install flathub com.github.iwalton3.jellyfin-media-player -y  #jellyfin player
-flatpak install flathub org.kde.kdenlive                          -y  #kdenlive
-flatpak install flathub org.kde.krita                             -y  #krita
+#flatpak install flathub org.kde.kdenlive                          -y  #kdenlive
+#flatpak install flathub org.kde.krita                             -y  #krita
 flatpak install flathub com.obsproject.Studio                     -y  #obs-studio
 flatpak install flathub com.visualstudio.code                     -y  #Visual Studio Code
 flatpak install flathub org.prismlauncher.PrismLauncher           -y  #minecraft
 flatpak install flathub org.qbittorrent.qBittorrent               -y  #qbittorrent
-flatpak install flathub net.pcsx2.PCSX2                           -y  #PCSX2
+#flatpak install flathub net.pcsx2.PCSX2                           -y  #PCSX2
 
-touch /Desktop/update.sh
-sudo echo 'sudo pacman -Syu -y' >> /Desktop/update.sh
-sudo echo 'flatpak update -y' >> /Desktop/update.sh
-
-sudo pacman -S nfs-utils
+#touch /Desktop/update.sh
+#sudo echo 'sudo pacman -Syu -y' >> /Desktop/update.sh
+#sudo echo 'flatpak update -y' >> /Desktop/update.sh
 
 sudo mkdir /mnt/ryoung
 sudo mkdir /mnt/games
