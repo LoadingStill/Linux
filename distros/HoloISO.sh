@@ -22,7 +22,7 @@ sudo chmod 777 /etc/fstab #makes fstab edditable, readable, and executable by an
 
 #add your files for your nfs mount in here
 #you should mount the nfs share to `/run/media/` for some readon SteamOS likes this location
-#<your nas ip>:<your mount address> /run/media/<mount name> nfs defaults,soft,timeo=1500,x-systemd.automount,vers=4.1,_netdev 0 0
+#<your nas ip>:/<your mount address> /run/media/<mount name> nfs defaults,soft,timeo=1500,x-systemd.automount,vers=4.1,_netdev 0 0
 sudo nano /etc/fstab
 
 #relaunches the daemon that manages mount moints
