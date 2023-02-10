@@ -27,6 +27,7 @@ sudo nano /etc/fstab
 
 #relaunches the daemon that manages mount moints
 sudo mount -a
+#https://www.reddit.com/r/SteamDeck/comments/wwz7sm/mount_steamdeck_to_your_local_machine_synology/
 
 sudo pacman -Sy holoiso-updateclient steamos-update check && steamos-update now #checks for updates
 
@@ -40,3 +41,7 @@ flatpak install flathub org.videolan.VLC
 flatpak install flathub org.mozilla.firefox
 flatpak install flathub com.visualstudio.code
 flatpak install flathub org.mozilla.Thunderbird
+
+sudo echo 'ILoveCandy' >> sudo /etc/pacman.conf
+sudo echo 'VerbosePkgLists' >> sudo /etc/pacman.conf
+sudo echo 'ParallelDownloads = 15' >> sudo /etc/pacman.conf
