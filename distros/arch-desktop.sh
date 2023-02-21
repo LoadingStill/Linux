@@ -69,9 +69,11 @@ cd
 
 
 ## yay
-yes | sudo pacman -S git
-cd
-mkdir AUR
-mkdir AUR/yay
-cd AUR/yay
-git clone https://aur.archlinux.org/yay.git
+#yes | sudo pacman -S git #already installed uncomment ONLY if the commands do not run
+cd /opt
+sudo git clone https://aur.archlinux.org/yay.git
+sudo chown -R tecmint:tecmint ./yay-git
+cd yay-git
+makepkg -si
+#yay -Syu #this is the update command for yay (NO SUDO), this will upgrade the system then upgrade the aur packages
+#yay -Syu --aur #this will upgrade aur packages only, NO SUDO
