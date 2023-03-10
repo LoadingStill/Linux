@@ -38,4 +38,5 @@ curl -sS https://downloads.1password.com/linux/keys/1password.asc | sudo gpg --d
  
  
 #app removal
-sudo apt purge "2048" AisleRiot Solitaire Chess Evolution "Five or More" Four-in-a-row "GNOME Nibbles" Hitori Klotski "Lights Off" Mahjongg Mines Quadrapassel Reversi Robots Sudoku "Swell Foop" Tali Taquin Tetravex Videos
+sudo apt-get purge gnome-2048 gnome-chess gnome-games gnome-klotski gnome-mahjongg gnome-mines gnome-nibbles gnome-robots gnome-sudoku gnome-taquin gnome-tetravex -y
+
