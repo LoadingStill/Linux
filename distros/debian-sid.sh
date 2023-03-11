@@ -23,7 +23,7 @@ sudo apt install radeontop -y
 sudo pip3 install amdgpu-fan -y
 
 #packages
-sudo apt install steam-installer thunderbird obs-studio nala qbittorrent
+sudo apt install steam-installer thunderbird obs-studio nala qbittorrent wine 'gnome-wine-icon-theme' winetricks
 cd Downloads/
 wget https://discord.com/api/download?platform=linux&format=deb
 cd
