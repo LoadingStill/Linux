@@ -28,23 +28,22 @@ sudo apt install steam thunderbird obs-studio nala qbittorrent
 #1password
 curl -sS https://downloads.1password.com/linux/keys/1password.asc | sudo gpg --dearmor --output /usr/share/keyrings/1password-archive-keyring.gpg
 
- sudo mkdir -p /etc/debsig/policies/AC2D62742012EA22/
- curl -sS https://downloads.1password.com/linux/debian/debsig/1password.pol | sudo tee /etc/debsig/policies/AC2D62742012EA22/1password.pol
+sudo mkdir -p /etc/debsig/policies/AC2D62742012EA22/curl -sS https://downloads.1password.com/linux/debian/debsig/1password.pol | sudo tee /etc/debsig/policies/AC2D62742012EA22/1password.pol
  
- sudo mkdir -p /usr/share/debsig/keyrings/AC2D62742012EA22
- curl -sS https://downloads.1password.com/linux/keys/1password.asc | sudo gpg --dearmor --output /usr/share/debsig/keyrings/AC2D62742012EA22/debsig.gpg
+sudo mkdir -p /usr/share/debsig/keyrings/AC2D62742012EA22
+curl -sS https://downloads.1password.com/linux/keys/1password.asc | sudo gpg --dearmor --output /usr/share/debsig/keyrings/AC2D62742012EA22/debsig.gpg
  
- sudo apt update && sudo apt install 1password -y
+sudo apt update && sudo apt install 1password -y
  
- #protonPVN
- cd Downloads/
- wget https://repo.protonvpn.com/debian/dists/stable/main/binary-all/protonvpn-stable-release_1.0.3_all.deb
- #http://ftp.us.debian.org/debian/pool/main/liba/libappindicator/gir1.2-appindicator3-0.1_0.4.92-7_amd64.deb #for tray icon, this is an old package do not use?
- cd
- sudo apt-get update
- sudo apt-get install protonvpn gnome-shell-extension-appindicator #gir1.2-appindicator3-0.1 #this is an OLD package use the deb above
- #if you are asking about your display then use the output of the below command
- #grep '/usr/s\?bin' /etc/systemd/system/display-manager.service
+#protonPVN
+cd Downloads/
+wget https://repo.protonvpn.com/debian/dists/stable/main/binary-all/protonvpn-stable-release_1.0.3_all.deb
+#http://ftp.us.debian.org/debian/pool/main/liba/libappindicator/gir1.2-appindicator3-0.1_0.4.92-7_amd64.deb #for tray icon, this is an old package do not use?
+cd
+sudo apt-get update
+sudo apt-get install protonvpn gnome-shell-extension-appindicator #gir1.2-appindicator3-0.1 #this is an OLD package use the deb above
+#if you are asking about your display then use the output of the below command
+#grep '/usr/s\?bin' /etc/systemd/system/display-manager.service
  
 #app removal
 sudo apt-get purge gnome-2048 gnome-chess gnome-games gnome-klotski gnome-mahjongg gnome-mines gnome-nibbles gnome-robots gnome-sudoku gnome-taquin gnome-tetravex -y
