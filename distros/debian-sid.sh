@@ -52,4 +52,21 @@ sudo apt-get install protonvpn gnome-shell-extension-appindicator -y #gir1.2-app
 sudo apt-get purge gnome-2048 gnome-chess gnome-games gnome-klotski gnome-mahjongg gnome-mines gnome-nibbles gnome-robots gnome-sudoku gnome-taquin gnome-tetravex -y
 sudo apt-get purge aisleriot evolution five-or-more four-in-a-row lightsoff quadrapassel swell-foop tali totem hitori iagno -y
 
+
+#NAS Mount nfs
+sudo apt install
+
+sudo mkdir /mnt/ryoung
+sudo mkdir /mnt/games
+sudo mkdir /mnt/proxmox
+sudo mkdir /mnt/media
+sudo mkdir /mnt/HowToIT
+
+sudo echo '10.1.1.26:/mnt/servarr/ryoung  /mnt/ryoung  nfs auto,nofail,noatime,nolock,intr,tcp,actimeo=1800 0 0' >> sudo /etc/fstab
+sudo echo '10.1.1.26:/mnt/servarr/games  /mnt/games  nfs auto,nofail,noatime,nolock,intr,tcp,actimeo=1800 0 0' >> sudo /etc/fstab
+sudo echo '10.1.1.26:/mnt/servarr/proxmox  /mnt/proxmox  nfs auto,nofail,noatime,nolock,intr,tcp,actimeo=1800 0 0' >> sudo /etc/fstab
+sudo echo '10.1.1.26:/mnt/servarr/HowToIT  /mnt/HowToIT  nfs auto,nofail,noatime,nolock,intr,tcp,actimeo=1800 0 0' >> sudo /etc/fstab
+sudo echo '10.1.1.26:/mnt/servarr/media  /mnt/media  nfs auto,nofail,noatime,nolock,intr,tcp,actimeo=1800 0 0' >> sudo /etc/fstab
+
+
 sudo reboot
