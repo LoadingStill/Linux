@@ -23,7 +23,10 @@ sudo apt install radeontop -y
 sudo pip3 install amdgpu-fan -y
 
 #packages
-sudo apt install steam thunderbird obs-studio nala qbittorrent
+sudo apt install steam-installer thunderbird obs-studio nala qbittorrent
+cd Downloads/
+wget https://discord.com/api/download?platform=linux&format=deb
+cd
 
 #1password
 curl -sS https://downloads.1password.com/linux/keys/1password.asc | sudo gpg --dearmor --output /usr/share/keyrings/1password-archive-keyring.gpg
