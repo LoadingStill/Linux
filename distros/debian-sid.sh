@@ -43,6 +43,8 @@ curl -sS https://downloads.1password.com/linux/keys/1password.asc | sudo gpg --d
  cd
  sudo apt-get update
  sudo apt-get install protonvpn gnome-shell-extension-appindicator #gir1.2-appindicator3-0.1 #this is an OLD package use the deb above
+ #if you are asking about your display then use the output of this command
+ #grep '/usr/s\?bin' /etc/systemd/system/display-manager.service
  
 #app removal
 sudo apt-get purge gnome-2048 gnome-chess gnome-games gnome-klotski gnome-mahjongg gnome-mines gnome-nibbles gnome-robots gnome-sudoku gnome-taquin gnome-tetravex -y
