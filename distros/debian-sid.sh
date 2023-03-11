@@ -39,4 +39,4 @@ curl -sS https://downloads.1password.com/linux/keys/1password.asc | sudo gpg --d
  
 #app removal
 sudo apt-get purge gnome-2048 gnome-chess gnome-games gnome-klotski gnome-mahjongg gnome-mines gnome-nibbles gnome-robots gnome-sudoku gnome-taquin gnome-tetravex -y
-
+sudo apt-get purge aisleriot evolution five-or-more four-in-a-row lightsoff quadrapassel swell-foop tali totem -y
