@@ -51,3 +51,5 @@ sudo apt-get install protonvpn gnome-shell-extension-appindicator #gir1.2-appind
 #app removal
 sudo apt-get purge gnome-2048 gnome-chess gnome-games gnome-klotski gnome-mahjongg gnome-mines gnome-nibbles gnome-robots gnome-sudoku gnome-taquin gnome-tetravex -y
 sudo apt-get purge aisleriot evolution five-or-more four-in-a-row lightsoff quadrapassel swell-foop tali totem hitori iagno -y
+
+sudo reboot
