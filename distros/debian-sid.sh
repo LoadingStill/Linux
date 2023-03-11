@@ -36,6 +36,13 @@ curl -sS https://downloads.1password.com/linux/keys/1password.asc | sudo gpg --d
  
  sudo apt update && sudo apt install 1password -y
  
+ #protonPVN
+ cd Downloads/
+ wget https://repo.protonvpn.com/debian/dists/stable/main/binary-all/protonvpn-stable-release_1.0.3_all.deb
+ #http://ftp.us.debian.org/debian/pool/main/liba/libappindicator/gir1.2-appindicator3-0.1_0.4.92-7_amd64.deb #for tray icon, this is an old package do not use?
+ cd
+ sudo apt-get update
+ sudo apt-get install protonvpn gnome-shell-extension-appindicator #gir1.2-appindicator3-0.1 #this is an OLD package use the deb above
  
 #app removal
 sudo apt-get purge gnome-2048 gnome-chess gnome-games gnome-klotski gnome-mahjongg gnome-mines gnome-nibbles gnome-robots gnome-sudoku gnome-taquin gnome-tetravex -y
