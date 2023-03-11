@@ -44,7 +44,7 @@ wget https://repo.protonvpn.com/debian/dists/stable/main/binary-all/protonvpn-st
 #http://ftp.us.debian.org/debian/pool/main/liba/libappindicator/gir1.2-appindicator3-0.1_0.4.92-7_amd64.deb #for tray icon, this is an old package do not use?
 cd
 sudo apt-get update
-sudo apt-get install protonvpn gnome-shell-extension-appindicator #gir1.2-appindicator3-0.1 #this is an OLD package use the deb above
+sudo apt-get install protonvpn gnome-shell-extension-appindicator -y #gir1.2-appindicator3-0.1 #this is an OLD package use the deb above
 #if you are asking about your display then use the output of the below command
 #grep '/usr/s\?bin' /etc/systemd/system/display-manager.service
  
