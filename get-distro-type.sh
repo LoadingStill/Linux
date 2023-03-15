@@ -32,8 +32,20 @@ case $choice in
             echo "Running Debian-specific code..."
             # Add Debian-specific code here
         elif [[ "$OS" == "Ubuntu" ]]; then
-            echo "Running Ubuntu-specific code..."
-            # Add Ubuntu-specific code here
+            read -p "Do you want to run Ubuntu server or desktop-specific code? [S/d]: " ubuntu_choice
+            case $ubuntu_choice in
+                s|S )
+                    echo "Running Ubuntu server-specific code..."
+                    # Add Ubuntu server-specific code here
+                    ;;
+                d|D )
+                    echo "Running Ubuntu desktop-specific code..."
+                    # Add Ubuntu desktop-specific code here
+                    ;;
+                * )
+                    echo "Invalid choice, skipping Ubuntu-specific code."
+                    ;;
+            esac
         elif [[ "$OS" == "Arch Linux" ]]; then
             echo "Running Arch Linux-specific code..."
             # Add Arch Linux-specific code here
