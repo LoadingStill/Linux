@@ -20,25 +20,37 @@ else
     VER=$(uname -r)
 fi
 
+
 echo "You are using $OS version $VER."
 
-# Run code specific to each distribution
-if [[ "$OS" == "Debian GNU/Linux" ]]; then
-    echo "Running Debian-specific code..."
-    # Add Debian-specific code here
-elif [[ "$OS" == "Ubuntu" ]]; then
-    echo "Running Ubuntu-specific code..."
-    # Add Ubuntu-specific code here
-elif [[ "$OS" == "Arch Linux" ]]; then
-    echo "Running Arch Linux-specific code..."
-    # Add Arch Linux-specific code here
-elif [[ "$OS" == "Red Hat Enterprise Linux" ]]; then
-    echo "Running Red Hat-specific code..."
-    # Add Red Hat-specific code here
-elif [[ "$OS" == "Gentoo Base System" ]]; then
-    echo "Running Gentoo-specific code..."
-    # Add Gentoo-specific code here
-else
-    echo "Running generic Linux code..."
-    # Add generic Linux code here
-fi
+
+read -p "Do you want to run distribution-specific code? [Y/n]: " choice
+case $choice in
+    y|Y )
+        # Run code specific to each distribution
+        if [[ "$OS" == "Debian GNU/Linux" ]]; then
+            echo "Running Debian-specific code..."
+            # Add Debian-specific code here
+        elif [[ "$OS" == "Ubuntu" ]]; then
+            echo "Running Ubuntu-specific code..."
+            # Add Ubuntu-specific code here
+        elif [[ "$OS" == "Arch Linux" ]]; then
+            echo "Running Arch Linux-specific code..."
+            # Add Arch Linux-specific code here
+        elif [[ "$OS" == "Red Hat Enterprise Linux" ]]; then
+            echo "Running Red Hat-specific code..."
+            # Add Red Hat-specific code here
+        elif [[ "$OS" == "Gentoo Base System" ]]; then
+            echo "Running Gentoo-specific code..."
+            # Add Gentoo-specific code here
+        else
+            echo "Distribution-specific code not available for $OS."
+        fi
+        ;;
+    n|N )
+        echo "Skipping distribution-specific code."
+        ;;
+    * )
+        echo "Invalid choice, skipping distribution-specific code."
+        ;;
+esac
