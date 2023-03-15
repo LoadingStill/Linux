@@ -24,7 +24,7 @@ fi
 echo "You are using $OS version $VER."
 
 
-read -p "Do you want to run distribution-specific code? [Y/n]: " choice
+read -p "Do you want to run distribution-specific code? [y/n]: " choice
 case $choice in
     y|Y )
         # Run code specific to each distribution
