@@ -1,49 +1,31 @@
-next step is to remove numbers from os-release
-
-
-
 #!/bin/bash
+# Script to determine Linux distribution and version
 
-chmod -R +x /distros #makes everything in the /distros folder executable (does not run the programs, this only makes them able to run when/if the user wants or allows this script to auto run everything for the use)
-        #uname -v
-        egrep '^(ID_LIKE|VERSION|NAME)=' /etc/os-release
+if [ -f /etc/os-release ]; then
+    source /etc/os-release
+    OS=$NAME
+    VER=$VERSION_ID
+elif [ -f /etc/lsb-release ]; then
+    source /etc/lsb-release
+    OS=$DISTRIB_ID
+    VER=$DISTRIB_RELEASE
+elif [ -f /etc/redhat-release ]; then
+    OS=$(cat /etc/redhat-release | awk '{print $1}')
+    VER=$(cat /etc/redhat-release | awk '{print $4}')
+elif [ -f /etc/gentoo-release ]; then
+    OS=$(cat /etc/gentoo-release | awk '{print $1}')
+    VER=$(cat /etc/gentoo-release | awk '{print $5}')
+else
+    OS=$(uname -s)
+    VER=$(uname -r)
+fi
 
-#step 1:
-#Get distro type
-
-#distro variable is used to tell what distro you are using
-        distro=`sed -n 5p /etc/os-release`
-        echo "$distro"
-
-#Step 2:
-#Remove all expect the name of the distro ex: keep ubuntu remove lts and version number
-        remove="PRETTY_NAME=""
-        echo "${distro//$remove/ } " | tr -d '"'
-
-#removes qoutes
-#| tr -d  '"'      "
-
-#Step 4:
-#take remaining words from step 2 and search the /distros/scripts for any script with the name of the distro in it.
-
-
-#step 5:
-#tell the user what distro they are using and ask
-
-#shortned variable is the output of step 4 removing fluf from print out of step one.
-        echo "$shortned"
+echo "You are using $OS version $VER."
 
 
-#Step 6:
-#offer to run a set up script from the scripts that match the $shortned variable in the name of the script
-
-
-
-
-        #uname -v (back up)
-
-
-
-#https://linuxhint.com/remove_characters_string_bash/
-
-#http://linuxmafia.com/faq/Admin/release-files.html
+#This script first checks for the presence of the /etc/os-release file, which is used by most modern Linux distributions to identify themselves.
+#If this file is present, it sources the file and extracts the NAME and VERSION_ID variables. If the /etc/os-release file is not found, the script 
+#checks for other common distribution-specific files like /etc/lsb-release, /etc/redhat-release, and /etc/gentoo-release.
+#If none of these files are found, the script falls back to using the uname command to retrieve the kernel name (usually "Linux") and kernel release version.
+#After determining the OS and version, the script prints out a message to the user.
+#Note that this script should work with any Linux distribution that provides one of the four files checked by the script.
