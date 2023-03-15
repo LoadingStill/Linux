@@ -23,7 +23,10 @@ fi
 echo "You are using $OS version $VER."
 
 # Run code specific to each distribution
-if [[ "$OS" == "Ubuntu" ]]; then
+if [[ "$OS" == "Debian GNU/Linux" ]]; then
+    echo "Running Debian-specific code..."
+    # Add Debian-specific code here
+elif [[ "$OS" == "Ubuntu" ]]; then
     echo "Running Ubuntu-specific code..."
     # Add Ubuntu-specific code here
 elif [[ "$OS" == "Arch Linux" ]]; then
