@@ -22,9 +22,20 @@ fi
 
 echo "You are using $OS version $VER."
 
-
-#This script first checks for the presence of the /etc/os-release file, which is used by most modern Linux distributions to identify themselves.
-#If this file is present, it sources the file and extracts the NAME and VERSION_ID variables. If the /etc/os-release file is not found, the script checks for other common distribution-specific files like /etc/lsb-release, /etc/redhat-release, and /etc/gentoo-release.
-#If none of these files are found, the script falls back to using the uname command to retrieve the kernel name (usually "Linux") and kernel release version.
-#After determining the OS and version, the script prints out a message to the user.
-#Note that this script should work with any Linux distribution that provides one of the four files checked by the script.
+# Run code specific to each distribution
+if [[ "$OS" == "Ubuntu" ]]; then
+    echo "Running Ubuntu-specific code..."
+    # Add Ubuntu-specific code here
+elif [[ "$OS" == "Arch Linux" ]]; then
+    echo "Running Arch Linux-specific code..."
+    # Add Arch Linux-specific code here
+elif [[ "$OS" == "Red Hat Enterprise Linux" ]]; then
+    echo "Running Red Hat-specific code..."
+    # Add Red Hat-specific code here
+elif [[ "$OS" == "Gentoo Base System" ]]; then
+    echo "Running Gentoo-specific code..."
+    # Add Gentoo-specific code here
+else
+    echo "Running generic Linux code..."
+    # Add generic Linux code here
+fi
