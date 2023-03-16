@@ -31,7 +31,7 @@ I will be using Ubutnu Server and Debian Server in this guide.  Ubuntu is based 
 
 1. When you have installed the Linux Distro of choice, you will then need to navigate to https://github.com/LoadingStill/Linux
     1. Download with the terminal
-        1. `wget https://github.com/LoadingStill/Linux`
+        1. `wget https://github.com/LoadingStill/Linux/archive/refs/heads/main.zip`
     2. Download with a Graphical User Interface
         1. Click the Green Button near the top right of the repository section and select "Download Zip"
         2. When the file is done downloading, you need to go to your downloads folder and right-click on the file you just downloaded.  Click unzip and hit enter
