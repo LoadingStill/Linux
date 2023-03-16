@@ -46,7 +46,7 @@ I will be using Ubutnu Server and Debian Server in this guide.  Ubuntu is based 
         1. `chmod +x get-distro-type.sh`
             1. changes permission of the single file "get-distro-type.sh" to add executable permissions
         2. `sudo chmod +x /distros/debian-all.sh`
-            1. Adds execution permissions to the single file "debian-all.sh" in the file "/distros"
+            1. Adds execution permissions to the single file "debian-all.sh" in the folder "/distros"
 4. you can check the permissions by running `ls -l`
     1. If you see an x in the string next to the file name you were adding execute permissions to, then you have done this correctly
 5. Now to run the script you will type `./FileName`
