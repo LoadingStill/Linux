@@ -70,6 +70,29 @@ case $choice in
         ;;
     n|N )
         echo "Skipping distribution-specific code."
+        # Define the list of options
+           options=("Option 1" "Option 2" "Option 3")
+           
+          # Use the select command to display the options and prompt the user to select one
+          select choice in "${options[@]}"; do
+            case $choice in
+              "Option 1")
+                echo "You chose Option 1"
+                break
+                ;;
+              "Option 2")
+                echo "You chose Option 2"
+                break
+                ;;
+              "Option 3")
+                echo "You chose Option 3"
+                break
+                ;;
+              *)
+                echo "Invalid option, please try again."
+                ;;
+            esac
+          done
         ;;
     * )
         echo "Invalid choice, skipping distribution-specific code."
