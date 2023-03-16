@@ -44,6 +44,7 @@ case $choice in
                 s|S )
                     echo "Running Ubuntu server-specific code..."
                     # Add Ubuntu server-specific code here
+                    sh distros/ubuntu-server-homelab.sh
                     ;;
                 d|D )
                     echo "Running Ubuntu desktop-specific code..."
