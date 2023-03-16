@@ -55,4 +55,4 @@ I will be using Ubutnu Server and Debian Server in this guide.  Ubuntu is based 
         1. `./get-distro-type.sh`
             1. This command runs the file "get-distro-type.sh" and executes what ever that script is asking for.
         3. `./distros/debian-all.sh`
-            1. This command runs the file "debian-all" in the file "/distros" and executes what ever that script is asking for.
+            1. This command runs the file "debian-all" in the folder "/distros" and executes what ever that script is asking for.
