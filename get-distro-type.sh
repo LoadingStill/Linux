@@ -1,5 +1,12 @@
 #!/bin/bash
 # Script to determine Linux distribution and version
+#this is best run with sudo permissions to auto install the packages in the next steps.
+
+if [[ $EUID -ne 0 ]]; then #if $UIS is not equal to zero then the user is not running in sudo (root)
+  echo "This script must be run with sudo."
+  exit 1
+fi
+
 
 if [ -f /etc/os-release ]; then
     source /etc/os-release
