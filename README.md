@@ -25,6 +25,7 @@ I will be using Ubutnu Server and Debian Server in this guide.  Ubuntu is based 
 
 ### Disclaimer
 #### These scripts have only been tested on my system or writen and NEVER tested.  Run at your own risk.  Please read the scripts to understand what they do.  Nothing is designed to damage your system in any way.  Only to help in first install of software and set up.  Anything beyond that use case I do not have the time to support.  I just wanted a quick way to install a new VM for my homelab and not need to be at my computer for the hour a full set up will take.  If you would like to help pease do.
+#### This script dose check if the user is running as UID=0 (root) becuase this script installs software for you.  Sudo is needed for that.  For more info on what sudo is visit: https://howtoit.wiki/index.php/Sudo
 
 ### How To Use This Auto-Installing Scripts
 #### The get-distro-type.sh script is in progress!!! Some of the scripts are not complete but are in progress.
