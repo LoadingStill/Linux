@@ -29,6 +29,7 @@ fi
 
 
 echo "You are using $OS version $VER."
+sleep 3
 
 
 read -p "Do you want to run distribution-specific code? [y/n]: " choice
