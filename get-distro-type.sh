@@ -49,6 +49,7 @@ case $choice in
                 d|D )
                     echo "Running Ubuntu desktop-specific code..."
                     # Add Ubuntu desktop-specific code here
+                    sh distros/ubuntu-desktop.sh
                     ;;
                 * )
                     echo "Invalid choice, skipping Ubuntu-specific code."
