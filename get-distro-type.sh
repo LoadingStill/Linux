@@ -39,15 +39,15 @@ case $choice in
             echo "Running Debian-specific code..."
             # Add Debian-specific code here
         elif [[ "$OS" == "Ubuntu" ]]; then
-            read -p "Do you want to run Ubuntu Server Homelab or desktop-specific code? [S/d]: " ubuntu_choice
+            read -p "Do you want to run Ubuntu Server Homelab or Desktop Specific installer? [S/d]: " ubuntu_choice
             case $ubuntu_choice in
                 s|S )
-                    echo "Running Ubuntu server-specific code..."
+                    echo "Running Ubuntu Server Homelab code..."
                     # Add Ubuntu server-specific code here
                     sh distros/ubuntu-server-homelab.sh
                     ;;
                 d|D )
-                    echo "Running Ubuntu desktop-specific code..."
+                    echo "Running Ubuntu Desktop Specific code..."
                     # Add Ubuntu desktop-specific code here
                     sh distros/ubuntu-desktop.sh
                     ;;
