@@ -30,4 +30,15 @@ if [ -x "$(command -v snap)" ]; then
   sudo snap refresh
 fi
 
-echo "System update complete."
+# check if a reboot is required
+if [ -f /var/run/reboot-required ]; then
+  echo "System update requires a reboot."
+  read -p "Do you want to restart now? (y/n)" choice
+  case "$choice" in
+    y|Y ) sudo reboot;;
+    n|N ) echo "Please restart the system manually when convenient.";;
+    * ) echo "Invalid input. Please enter y or n.";;
+  esac
+else
+  echo "System update complete."
+fi
