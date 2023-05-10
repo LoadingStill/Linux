@@ -1,5 +1,6 @@
 [![GitHub Gist last commit](https://img.shields.io/github/gist/last-commit/Linux?style=for-the-badge)](https://img.shields.io/github/gist/last-commit/Linux?style=flat-square)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/LoadingStill/Linux)
+![GitHub last commit](https://img.shields.io/github/last-commit/LoadingStill/Linux)
 
 # Linux
 
