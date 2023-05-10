@@ -1,4 +1,4 @@
-![GitHub commit activity](https://img.shields.io/github/commit-activity/y/LoadingStill/Linux)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/y/LoadingStill/Linux)  
 ![GitHub last commit](https://img.shields.io/github/last-commit/LoadingStill/Linux)
 
 # Linux
