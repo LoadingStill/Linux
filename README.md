@@ -1,4 +1,4 @@
-
+![GitHub Gist last commit](https://img.shields.io/github/gist/last-commit/Linux?style=for-the-badge)
 
 # Linux
 
