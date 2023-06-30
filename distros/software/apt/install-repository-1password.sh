@@ -1,5 +1,5 @@
 #!/bin/bash
-
+echo "####################    1Password Installing    #######################"
 # Add the key for the 1Password apt repository:
 curl -sS https://downloads.1password.com/linux/keys/1password.asc | sudo gpg --dearmor --output /usr/share/keyrings/1password-archive-keyring.gpg
 
@@ -14,7 +14,7 @@ curl -sS https://downloads.1password.com/linux/keys/1password.asc | sudo gpg --d
 
 # Install 1Password:
 sudo apt update && sudo apt install 1password
-
+echo "####################    1Password Installed    #######################"
 
 
 # The packages and repository are signed with the GPG key 3FEF9748469ADBE15DA7CA80AC2D62742012EA22.
