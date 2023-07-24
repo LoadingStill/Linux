@@ -9,4 +9,6 @@ curl https://repo.jellyfin.org/install-debuntu.sh | sudo bash
 # wget -O- https://repo.jellyfin.org/install-debuntu.sh | sudo bash
 
 # You only need to run one of the 2 line.
+sudo systemctl start jellyfin
+sudo systemctl enable jellyfin
 echo "########################  Jellyfin  installed  #######################"
