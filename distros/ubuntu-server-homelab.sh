@@ -29,7 +29,7 @@ echo "####################    Updated    #######################"
 
 
 echo "####################    Installing Software  #######################"
-sh software/apt/install-homelab-jellyfin.sh #installs jellyfin
+sh software/apt/install-homelab-jellyfin-ubuntu.sh #installs jellyfin
 echo 'jellyfin installed - $ip4:8096' >> /home/$(whoami)/servarrInfo
 
 sh software/ubuntu/20.04-homelab-install-sonarr.sh #installs sonarr
