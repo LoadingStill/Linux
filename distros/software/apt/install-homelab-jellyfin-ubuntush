@@ -1,5 +1,7 @@
 !#/bin/bash
 echo "########################  Jellyfin installing  #######################"
+sudo rm /etc/apt/sources.list.d/jellyfin.list
+
 # use if you have `curl` installed
 curl https://repo.jellyfin.org/install-debuntu.sh | sudo bash
 
