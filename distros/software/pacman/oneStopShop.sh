@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 # Install flatpak and add flathub repository
@@ -20,6 +19,20 @@ if ! command -v yay &> /dev/null; then
     cd ..
     rm -rf yay
 fi
+
+# Install 1Password
+curl -sS https://downloads.1password.com/linux/keys/1password.asc | gpg --import
+git clone https://aur.archlinux.org/1password.git
+cd 1password
+makepkg -si
+cd ..
+
+# Download and install PyCharm Professional
+wget -O pycharm.tar.gz "https://download.jetbrains.com/python/pycharm-professional-2023.2.tar.gz"
+tar -xzf pycharm.tar.gz
+rm pycharm.tar.gz
+sudo mv PyCharm*/ /opt/pycharm
+sudo ln -s /opt/pycharm/bin/pycharm.sh /usr/local/bin/pycharm
 
 # Install AppImageLauncher from AUR
 yay -S appimagelauncher -y
