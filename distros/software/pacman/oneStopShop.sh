@@ -40,4 +40,10 @@ sudo ln -s /opt/pycharm/bin/pycharm.sh /usr/local/bin/pycharm
 # Install AppImageLauncher from AUR
 yay -S appimagelauncher -y
 
+# Download Heroic Games Launcher .pacman package
+wget -P ~/Downloads https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v2.9.1/heroic-2.9.1.pacman
+
+# Install Heroic Games Launcher package
+sudo pacman -U ~/Downloads/heroic-2.9.1.pacman --noconfirm
+
 echo "All applications installed successfully!"
