@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Uninstall gnome-games packages
+sudo pacman -Rs gnome-games gnome-klotski gnome-mahjongg gnome-mines gnome-nibbles gnome-robots gnome-sudoku gnome-taquin gnome-tetravex --noconfirm
+
 # Install flatpak and add flathub repository
 sudo pacman -S flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
